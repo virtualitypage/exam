@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+.body {
+  margin: 0;
+  padding: 0;
+  color: #1a1a1a;
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #ddffff;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(45deg, #0000f8 0%, #168afe 50%, #00c8ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  top: 0;
+  box-sizing: border-box;
+}
+h3 a {
+  color: #00ff00;
+  font-size: 23px;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+ul li a {
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  margin-top: 60px;
+  margin: auto;
+}
+
+.logo2 {
+  margin-top: 60px;
+  margin: auto;
+}
+
+.logo3 {
+  margin-top: 60px;
+  margin: auto;
+}
+
+.aws-logo {
+  width: 180px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 50px;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.header_left {
+  float: left;
+  margin-left: -50px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem -1rem;
+  /* background: #0fc9f7; */
+  background: linear-gradient(45deg, #0000f8 0%, #168afe 50%, #00c8ff 100%);
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+
+/* フェードアップ */
+.fadeUp {
+  animation-name:fadeUp;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+@keyframes fadeUp{
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 遅延時間*/
+.delay-time {
+  animation-delay: 0.25s;
+}
+.delay-time2 {
+  animation-delay: 0.35s;
+}
+.delay-time3 {
+  animation-delay: 0.45s;
+}
+.delay-time4 {
+  animation-delay: 0.55s;
+}
+.delay-time5 {
+  animation-delay: 0.65s;
+}
+
+/*レスポンシブ対応*/
+img {
+  max-width:100%;
+}

@@ -1,0 +1,244 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  background: #ddffff;
+  color: #1a1a1a;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  background: linear-gradient(45deg, #0000f8 0%, #168afe 50%, #00c8ff 100%);
+}
+
+h3 a {
+  color: #00ff00;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  margin: 0 auto;
+  padding: 53px 0;
+}
+
+.logo-heading {
+  border-bottom: 8px solid #dddddd;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.logo {
+  margin: auto;
+  margin-top: 60px;
+}
+
+.logo2 {
+  margin: auto;
+  margin-top: 60px;
+}
+
+.logo3 {
+  margin: auto;
+  margin-top: 60px;
+}
+
+.lpi-logo {
+  display:flex;
+  justify-content: space-evenly;
+  width: 250px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header_left {
+  float: left;
+  margin-left: -50px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  /* background: #0fc9f7; */
+  background: linear-gradient(45deg, #0000f8 0%, #168afe 50%, #00c8ff 100%);
+  /* padding: 0.5rem -1rem; */
+}
+
+/* lpic-1 */
+.button_line a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  max-width: 220px;
+  margin: 0 auto;
+  padding: 10px 25px;
+  color: #313131;
+  background: #eee;
+  font-weight: 600;
+  transition: 0.1s ease-in-out;
+}
+.button_line a:hover {
+  background: #c6f9ff;
+  color: #0061c2;
+}
+.button_line a:before, .button_line a:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  box-sizing: inherit;
+  content: "";
+}
+.button_line a:hover:before, .button_line a:hover:after {
+  width: 100%;
+  height: 100%;
+}
+.button_line a:hover:before {
+  border-top-color: #6bb6ff;
+  border-right-color: #6bb6ff;
+  transition: width 0.05s ease-out, height 0.05s ease-out 0.05s;
+}
+.button_line a:hover:after {
+  border-bottom-color: #6bb6ff;
+  border-left-color: #6bb6ff;
+  transition: border-color 0s ease-out 0.05s, width 0.05s ease-out 0.05s, height 0.05s ease-out 0.05s;
+}
+
+/* lpic-2 */
+.button_line2 a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  max-width: 220px;
+  margin: 0 auto;
+  padding: 10px 25px;
+  color: #313131;
+  background: #eee;
+  font-weight: 600;
+  transition: 0.1s ease-in-out;
+}
+.button_line2 a:hover {
+  background: #c6ffdc;
+  color: #47e735;
+}
+.button_line2 a:before, .button_line2 a:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  box-sizing: inherit;
+  content: "";
+}
+.button_line2 a:hover:before, .button_line2 a:hover:after {
+  width: 100%;
+  height: 100%;
+}
+.button_line2 a:hover:before {
+  border-top-color: #29a602;
+  border-right-color: #29a602;
+  transition: width 0.05s ease-out, height 0.05s ease-out 0.05s;
+}
+.button_line2 a:hover:after {
+  border-bottom-color: #29a602;
+  border-left-color: #29a602;
+  transition: border-color 0s ease-out 0.05s, width 0.05s ease-out 0.05s, height 0.05s ease-out 0.05s;
+}
+
+input {
+  display: none; /* デフォルトのボタンを非表示にする */
+}
+
+.flash {
+  padding: 10px 20px; /* 余白を指定 */
+  color: #000000; /* 文字色を白に指定 */
+  font-size: 15px; /* 文字サイズを30pxに指定 */
+  text-decoration: none;
+  animation: flash 4s infinite; /* アニメーションflashを1秒ごとに繰り返す */
+}
+
+@keyframes flash {
+  0%, 100% {
+    /* 明るく光るよう影を重ねる */
+    box-shadow: 0 0 10px rgb(2, 198, 42), 0 0 20px rgb(31, 197, 72), 0 0 30px rgb(4, 212, 21), 0 0 40px rgb(32, 205, 38), 0 0 70px rgb(48, 233, 88), 0 0 80px rgb(92, 255, 116), 0 0 100px rgba(13, 255, 0, 0.4), 0 0 150px rgba(13, 255, 0, 0.4), 0 0 170px rgba(72, 255, 0, 0.4), 0 0 200px rgba(51, 255, 0, 0.4);
+  }
+  50% {
+    /* 淡く光るよう影を重ねる */
+    box-shadow: 0 0 10px #fff, 0 0 20px rgb(0, 255, 81), 0 0 30px rgb(116, 255, 132), 0 0 40px rgb(184, 255, 162);
+  }
+}
+
+/* フェードアップ */
+.fadeUp {
+  animation-name:fadeUp;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+@keyframes fadeUp{
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 遅延時間*/
+.delay-time {
+  animation-delay: 0.2s;
+}
+.delay-time2 {
+  animation-delay: 0.45s;
+}
+.delay-time3 {
+  animation-delay: 0.7s;
+}

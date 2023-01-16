@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>LPIC101</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/lpic1.css">
+  </head>
+  <body class="body">
+    <header>
+      <script src="./js/lpic.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <h3 class="heading"><a href="./lpic-1">LPIC101</a></h3>
+      <nav>
+        <ul>
+          <li><a href="./pdf/LPIC101 101-500.pdf" download="LPIC101 101-500.pdf" class="pdf-alert">PDF</a></li>
+          <li><a href="./zip/LPIC101 101-500.zip" download="LPIC101 101-500.zip" class="test-alert">問題集</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p><b>問題 1 パラメータを指定せずにブロックデバイス名のみmkfsコマンドで作成されるファイルシステムのタイプを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. ext4</a>
+      <a>b. XFS</a>
+      <a>c. ext3</a>
+      <a>d. VFAT</a>
+      <a id="target1">e. ext2</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor1('target1');" />
+    </div>
+    <p><b>新しいディレクトリ作成するとき、所有ユーザーが読み取り、書き込みとリストする、または所有グループが読み取りとリストする可能にして、それ以外のユーザーはアクセスできないためには、どんなumask値を設定しなければならないですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target2">a. 0027</a>
+      <a>b. 7640</a>
+      <a>c. 0036</a>
+      <a>d. 0750</a>
+      <a>e. 0029</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor2('target2');" />
+    </div>
+    <p><b>ブート時に/dev/sda1上ext3ファイルシステムのフルファイルシステムのチェック間隔日数を変更するコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a id="target3">a. tune2fs -i 200 /dev/sda1</a>
+      <a>b. tune2fs --days 200 /dev/sda1</a>
+      <a>c. tune2fs -d 200 /dev/sda1</a>
+      <a>d. tune2fs -n 200 /dev/sda1</a>
+      <a>e. tune2fs -c 200 /dev/sda1</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor3('target3');" />
+    </div>
+    <p><b>新しいext4ファイルシステムでrootユーザーの予約スペースのデフォルトの割合はどのくらいですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 15%</a>
+      <a>b. 3九</a>
+      <a id="target4">c. 5%</a>
+      <a>d. 0%</a>
+      <a>e. 10%</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor4('target4');" />
+    </div>
+    <p><b>問題 5 /etc/fstabにリストされておらず、システムに認識されていないファイルシステムが手動でマウントされる場合、正しい記述はどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. システムはマウントポイントでファイル記述子を開くため、systemctl unmountを使用してマウントを削除する必要がある</a>
+      <a>b. systemdは、systemctl mountコマンドを使用せず、手動マウントを無視する</a>
+      <a>c. systemdマウントユニットが作成されない限り、systemdは短時間後にファイルシステムをマウント解除する</a>
+      <a id="target5">d. systemdはマウントユニットを自動的に生成し、マウントポイントを変更せずに監視する</a>
+      <a>e. コマンドsystemctl mountsyncを使用して、既存のマウントに基づいてマウントユニットを作成できる</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor5('target5');" />
+    </div>
+    <p><b>問題 6 locateコマンドが利用するファイル名データベースの更新を行うためのコマンドは何か？</b></p>
+    <clear>
+      <a id="target6">updatedb</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor6('target6');" />
+    </div>
+    <p><b>問題 7 コマンドmount --bindは何をしますか？1つ選択してください:</b></p>
+    <page>
+      <a id="target7">a. あるディレクトリの内容を別のディレクトリで利用できるようにする</a>
+      <a>b. 使用可能なすべてのファイルシステムを現在のディレクトリにマウントする</a>
+      <a>c. ユーザーがマウント可能なすべてのファイルシステムをユーザーのホームディレクトリにマウントする</a>
+      <a>d. オプションuserbindが設定されている/etc/fstabにリストされているすべてのファイルシステムをマウン卜する</a>
+      <a>e. 通常のファイルをディレクトリに永続的にマウントする</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor7('target7');" />
+    </div>
+    <p><b>問題 8 コマンドIs-iからの次の出力をご覧ください。<br>
+      525385 -rw-rw-r-- 2 1000 1000 0 Feb 12 19:44  a.txt<br>
+      526255 1rwxrwxrwx1 1000 1000 5 Feb 19:44 b.txt -> a.txt<br>
+      c.txtという名前の新しいファイルは、a.txt(Inode 525385)と同じiノード番号を持つためにどのコマンドを実行しますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. In -h a.txt c.txt</a>
+      <a id="target8">b. In a.txt c.txt</a>
+      <a>c. In c.txt a.txt</a>
+      <a>d. In -f c.txt a.txt</a>
+      <a>e. In -i 525385 c.txt</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor8('target8');" />
+    </div>
+    <p><b>問題 9 次のディレクトリを参照してください。<br>
+      drwxrwxr-x 2 root sales 4096 Jan 1 15:21 sales<br>
+      ディレクトリsales内に作成された新しいファイルがグループsalesに所有されるコマンドはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. chown --persistent *.sales sales</a>
+      <a>b. chgrp -p sales sales</a>
+      <a id="target9">c. chmod g+s sales</a>
+      <a id="target10">d. chmod 2775 sales</a>
+      <a>e. setpol -R newgroup=sales sales</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor9('target9');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor10('target10');" />
+    </div>
+    <p><b>問題 10 現在マウン卜されているすべてのファイルシステムを表示するコマンドを選択ください。(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target11">a. cat /proc/self/mounts</a>
+      <a>b. cat /proc/filesystems</a>
+      <a>c. Ismounts</a>
+      <a>d. free</a>
+      <a id="target12">e. mount</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor11('target11');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor12('target12');" />
+    </div>
+    <p><b>問題 11 どのコマンドが、マウン卜されているすべてのファイルシステムの現在のディスクスペース使用量を表示しますか？(パスまたはパラメーターなしでコマンドのみを記入ください。)</b></p>
+    <clear>
+      <a id="target13">df</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor13('target13');" />
+    </div>
+    <p><b>問題 12 ファイルdata.txtの所有権ユーザがdave、グループがstaffに変更するコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. chown dave+staff data.txt</a>
+      <a id="target14">b. chown dave:staff data.txt</a>
+      <a>c. chown dave/staff data.txt</a>
+      <a>d. chown -u dave -g staff data.txt</a>
+      <a>e. chown --user dave -group staff data.txt</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor14('target14');" />
+    </div>
+    <p><b>問題 13 ハードリンクの使用を検討する場合、ハードリンクを使用しない正当な理由は何ですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. ハードリンクファイルが変更されると、ファイルのコピーが作成され、追加のスペースが消費される</a>
+      <a>b. ルート以外のユーザーがハードリンクを作成する場合は、sulnをインストールする必要がある</a>
+      <a>c. 各ハードリンクには個別の所有権、アクセス許可、およびACLがあり、ファイルコンテンツの意図しない開示につながる可能性がある</a>
+      <a>d. ハードリンクはすべてのLinuxシステムで利用できるわけではない。ext4などの従来のファイルシステムではハードリンクがサポー卜されていない</a>
+      <a id="target15">e. ハードリンクは1つのファイルシステムに固有であり、別のファイルシステム上のファイルを指すことはできない</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor15('target15');" />
+    </div>
+    <p><b>問題 14 FHSでは、manマニュアルが保存されるディレクトリとして、どのディレクトリが指定されているか？適切なものを選択しなさい。1つ選択してください:</b></p>
+    <page>
+      <a id="target16">a. /usr/share/man</a>
+      <a>b. /usr/opt/ma</a>
+      <a>c. /usr/local/man</a>
+      <a>d. /var/pkg/man</a>
+      <a>e. /usr/doc</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor16('target16');" />
+    </div>
+    <p><b>問題 15 /procの配下にあるブート時にブートローダからカーネルに渡されたパラメータ一覧を記載するファイル名を入力ください。(パスなしでファイル名のみ)</b></p>
+    <clear>
+      <a id="target17">cmdline</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor17('target17');" />
+    </div>
+    <p><b>問題 16 System V initベースのシステムにおいてすべてのプロセスの親であるinitのPIDは何ですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 現在のランレベルと同じである</a>
+      <a>b. 再起動時に変更する</a>
+      <a>c. 0</a>
+      <a>d. -1</a>
+      <a id="target18">e. 1</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor18('target18');" />
+    </div>
+    <p><b>問題 17 Linuxシステムで電源管理イベントを処理するデーモンはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. psd</a>
+      <a>b. pwrmgntd</a>
+      <a>c. batteryd</a>
+      <a id="target19">d. acpid</a>
+      <a>e. inetd</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor19('target19');" />
+    </div>
+    <p><b>問題 18 BIOSを使用したPCのブートシーケンスについて正しいものはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target20">a. ブートプロセスの一部はBIOSから設定できる</a>
+      <a id="target21">b. コンピューターの電源を入れた後、BIOSが起動プロセスを開始する</a>
+      <a>c. BIOSは、ハードディスクなどのセカンダリストレージからハードウェアドライバーをロードすることにより開始される</a>
+      <a>d. BIOSブートプロセスは、ハードディスクなどのセカンダリストレージが機能している場合にのみ開始される</a>
+      <a>e. Linuxは、コンピューターの起動にBIOSが必要ない</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor20('target20');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor21('target21');" />
+    </div>
+    <p><b>問題 19 UEFIファームウェアに関しては正しい記述はどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target22">a. GPTメタデータ内の特別な領域に保存される</a>
+      <a>b. すべての設定を/boot/partitionに保存する</a>
+      <a id="target23">c. 特定のファイルシステムを使用および読み取り可能</a>
+      <a>d. パーティションテーブルを読み取って解釈できる</a>
+      <a>e. 固定ブートディスクからロードされる</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor22('target22');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor23('target23');" />
+    </div>
+    <p><b>問題 20 欠陥のあるカーネルモジュールがネットワークインターフェイスカードに問題を引き起こしている。システムの起勤時にこのモジュールが自動的にロードされないことを保証するアクションはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. modprobe-rの後に問題のモジュールの名前を使用する</a>
+      <a>b. 特定のモジュールの名前を指定せずにIsmod --remove --autocleanを使用する</a>
+      <a>c. modinfo-kの後に問題のモジュールの名前を使用する</a>
+      <a id="target24">d. 問題のあるモジュールの名前を含むブラックリスト行をファイル/etc/modprobe.d/blacklist.confに追加する</a>
+      <a>e. ファイルシステムからそのカーネルモジュールのディレクトリを削除し、そのモジュールを含むカーネルを再コンパイルする</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor24('target24');" />
+    </div>
+    <p><b>問題 21 カーネルリングバッファーの内容はいつリセットされますか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. 追加パラメータなしでdmesgを使用してリングバッファが読み取られる場合</a>
+      <a>b. 設定可能な時間(デフォルトでは15分)が経過したとき</a>
+      <a>c. カーネルが以前にアンロードされたカーネルモジュールをロードするとき</a>
+      <a id="target25">d. システムがシャットダウンまたはリブートされたとき</a>
+      <a id="target26">e. コマンドdmesg —clearを使用してリングバッファを明示的にリセットする場合</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor25('target25');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor26('target26');" />
+    </div>
+    <p><b>問題 22 Sysv initを使用した場合は、ブー卜する時Linuxカーネルにより通常に最初起動されるプログラムを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a id="target27">a. /sbin/init</a>
+      <a>b. /lib/init.so</a>
+      <a>c. /boot/init</a>
+      <a>d. /etc/rc.d/rcinit</a>
+      <a>e. /proc/sys/kernel/init</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor27('target27');" />
+    </div>
+    <p><b>問題 23 Debianパッケージは、インストール中にいくつかのファイルを作成する。ファイル/etc/debian_versionを所有しているパッケージを検索するコマンドはどれですか。1つ選択してください:</b></p>
+    <page>
+      <a id="target28">a. dpkg -S /etc/debian_versin</a>
+      <a>b. apt-file /e tc/debian_version</a>
+      <a>c. apt -r /etc/debian_version</a>
+      <a>d. apt-get search /etc/debian_version</a>
+      <a>e. find /etc/debian_version -dpkg</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor28('target28');" />
+    </div>
+    <p><b>問題 24 EFIシステムパーティションには何が含まれていますか？1つ選択してください:</b></p>
+    <page>
+      <a id="target29">a. 最初の段階のブートローダー</a>
+      <a>b. ユーザーのホームディレクトリ</a>
+      <a>c. Linuxルートファイルシステム</a>
+      <a>d. デフォルトのスワップスペースファイル</a>
+      <a>e. Linuxのデフォルトのシェルバイナリ</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor29('target29');" />
+    </div>
+    <p><b>問題 25 64ビットLinuxシステムにおいて、一般的に共有ライブラリが含まれているディレクトリはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. /var/lib64/</a>
+      <a>b. ~/.lib64/</a>
+      <a id="target30">c. /lib64/</a>
+      <a>d. /opt/lib64/</a>
+      <a id="target31">e. /usr/lib64/</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor30('target30');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor31('target31');" />
+    </div>
+    <p><b>問題 26 標準のGRUB2インストールにどのファイルが存在しますか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. /boot/grub/linux/vmlinuz</a>
+      <a id="target32">b. /boot/grub/i386-pc/lvm.mod</a>
+      <a>c. /boot/grub/stages/stage0</a>
+      <a>d. /boot/grub/fstab</a>
+      <a id="target33">e. /boot/grub/grub.cfg</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor32('target32');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor33('target33');" />
+    </div>
+    <p><b>問題 27 文字列fooで終わる名前を持つすべてのパッケージをインストールするコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. zypper get "＊f00"</a>
+      <a id="target34">b. zypper install "＊foo"</a>
+      <a>c. zypper add ".＊foo"</a>
+      <a>d. zypper force "foo＊"</a>
+      <a>e. zypper update "foo?"</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor34('target34');" />
+    </div>
+    <p><b>問題 28 仮想マシンのクローンを作成するときに変更すべきLinuxシステムのプロパティはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. /root/の許可</a>
+      <a id="target35">b. D-Bus マシンID</a>
+      <a>c. ファイルシステム</a>
+      <a>d. パーティションスキーム</a>
+      <a id="target36">e. SSHホストキー</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor35('target35');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor36('target36');" />
+    </div>
+    <p><b>問題 29 GRUB2を3番目のハードディスクのマスターブートレコードにインストールするコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. grub-mkrescue/dev/sdc</a>
+      <a>b. grub2 install /dev/sdc</a>
+      <a>c. grub-mbrinstall/dev/sdc</a>
+      <a id="target37">d. grub-install/dev/sdc</a>
+      <a>e. grub-setup/dev/sdc</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor37('target37');" />
+    </div>
+    <p><b>問題 30 ハードディスクドライブをパーティション分割するときに、Linuxスワップスペースに使用されるパーティションタイプはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 83</a>
+      <a id="target38">b. 82</a>
+      <a>c. 7</a>
+      <a>d. fd</a>
+      <a>e. 8e</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor38('target38');" />
+    </div>
+    <p><b>問題 31 yumの構成に関して正しい記述はどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. yum confupdateを実行する後にリポジトリ設定への変更はアクティブになる</a>
+      <a id="target39">b. パッケージリポジトリの設定は、複数のファイルに分割できる</a>
+      <a id="target40">c. リポジトリ設定には、$basearchや$releaseverなどの変数を含めることができる</a>
+      <a>d. yumdサービスを再起動後にyum設定への変更がアクティブになる</a>
+      <a>e. /etc/yum.repos.d/にファイルが含まれる場合、/etc/yum.confは無視される</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor39('target39');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor40('target40');" />
+    </div>
+    <p><b>問題 32 現在インストールされているすべてのパッケージの最新バージョンをインストールするのはapt-getサブコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. update</a>
+      <a>b. install</a>
+      <a id="target41">c. dist-upgrade</a>
+      <a>d. full-upgrade</a>
+      <a>e. auto-update</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor41('target41');" />
+    </div>
+    <p><b>問題 33 どのコマンドは設定ファイルを残してパッケージをアンインストールしますか？パッケージを再インストールする場合、設定ファイルを再利用することができる。1つ選択してください:</b></p>
+    <page>
+      <a>a. dpkg -P pkgname</a>
+      <a>b. dpkg -v pkgname</a>
+      <a id="target42">c. dpkg -r pkgname</a>
+      <a>d. dpkg -s pkgname</a>
+      <a>e. dpkg -L pkgname</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor42('target42');" />
+    </div>
+    <p><b>問題 34 RPM パッケージファイルfoo.rpmの依存関係をリストするコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. rpm -dep foo</a>
+      <a>b. rpm -Id foo.rpm</a>
+      <a>c. rpm -pD foo</a>
+      <a id="target43">d. rpm -qpR foo.rpm</a>
+      <a>e. rpm -R foo.rpm</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor43('target43');" />
+    </div>
+    <p><b>問題 35 新しいプロセスを実行するときに、通常のユーザーがniceコマンドを使用してプロセスに割り当てることができる最大のnice値は何ですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 99</a>
+      <a id="target44">b. 19</a>
+      <a>c. 9</a>
+      <a>d. 49</a>
+      <a>e. 15</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor44('target44');" />
+    </div>
+    <p><b>問題 36 /tmpディレクトリとサブディレクトリ内のrootが所有するすべてのファイルとディレクトリを出力するコマンドを選択ください。(ニつ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. find -path/tmp -uid root</a>
+      <a>b. find -path/tmp -user root -print</a>
+      <a id="target45">c. find /tmp -user root -print</a>
+      <a id="target46">d. find /tmp -user root</a>
+      <a>e. find /tmp -uid root -print</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor45('target45');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor46('target46');" />
+    </div>
+    <p><b>問題 37 Bashにおいて有効なストリームのリダイレクト演算子を選択ください。(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target47">a. ＜</a>
+      <a>b. ＞＞＞</a>
+      <a id="target48">c. 2＞&1</a>
+      <a>d. %＞</a>
+      <a>e. #＞</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor47('target47');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor48('target48');" />
+    </div>
+    <p><b>問題 38 現在の行と次の行を削除するviコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 2d</a>
+      <a id="target49">b. 2dd</a>
+      <a>c. dd2</a>
+      <a>d. d2</a>
+      <a>e. del2</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor49('target49');" />
+    </div>
+    <p><b>問題 39 コマンドdbmaint&は、dbmaintをバックグラウンドで実行する。ただし、ユーザーがシステムからログアウ卜すると、dbmaintは終了になる。プログラムを実行しているユーザーがログアウトしても、dbmaintの実行を継続できるコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target50">a. nohup dbmaint &</a>
+      <a>b. dbmaint &>/dev/pts/null</a>
+      <a>c. bg dbmaint</a>
+      <a>d. job -b dmaint</a>
+      <a>e. wait dbmaint</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor50('target50');" />
+    </div>
+    <p><b>問題 40 bashシェルからサブシェルを起動せずにファイル/usr/local/bin/runme.shから直接に命令を実行するコマンドを選択ください。(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target51">a. source /usr/local/bin/runme.sh</a>
+      <a>b. run /usr/local/bin/runme.sh</a>
+      <a id="target52">c. . /usr/local/bin/runme.sh</a>
+      <a>d. /bin/bash/usr/local/bin/runme.sh</a>
+      <a>e. /usr/local/bin/runme.sh</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor51('target51');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor52('target52');" />
+    </div>
+    <p><b>問題 41 どのプログラムが特定の間隔でコマンドを実行し、プログラムの出力の表示を更新しますか？(パスまたはパラメーターなしでコマンドのみ)</b></p>
+    <clear>
+      <a id="target53">watch</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor53('target53');" />
+    </div>
+    <p><b>問題 42 viで3行のテキストを削除し、カーソルを別の行に移動した直後に、削除されたコンテンツを現在の行の下に挿入する単一文字コマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. U</a>
+      <a>b. P</a>
+      <a>c. i</a>
+      <a id="target54">d. p</a>
+      <a>e. u</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor54('target54');" />
+    </div>
+    <p><b>問題 43 テキストファイルuserlist.txt内のすべてのCR-LFペアをLinuxの標準LFに変換してnewlist.txtファイルに保存するコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. tr -c "￥n￥r' "< newlist.txt >userlist.txt</a>
+      <a>b. tr-s "M" 'J' userlist.txt newlist.txt</a>
+      <a id="target55">c. tr -d '￥r' < userlist.txt > newlist.txt</a>
+      <a>d. tr"￥r￥n' "< userlist.txt > newlist.txt</a>
+      <a>e. tr "￥r' '￥n' userlist.txt newlist.txt</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor55('target55');" />
+    </div>
+    <p><b>問題 44 次の入力ストリームがある<br>
+      txtl.txt<br>
+      atxt.txt<br>
+      txtB.txt<br>
+      この入力ストリームを次の出力ストリームに変える正規表現はどれですか？<br>
+      <br>
+      txt1.bak.txt atxtbak.txt txtB.bak.txt<br>
+      <br>
+      1つ選択してください:
+    </b></p>
+    <page>
+      <a>a. s/txt/bak.txt/</a>
+      <a>b. s/^txt$/.bak^/</a>
+      <a id="target56">c. s/txt$/bak.txt/</a>
+      <a>d. s/[.txt]/.bak$l1/</a>
+      <a>e. s/^.txt/.bak/</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor56('target56');" />
+    </div>
+    <p><b>問題 45 viを終了する前に現在のファイルをfilea.txtとして保存するにはどのコマンドを入力する必要がありますか？1つ選択してください:</b></p>
+    <page>
+      <a id="target57">a. :w filea.txt</a>
+      <a>b. %w filea.txt</a>
+      <a>c. :s filea.txt</a>
+      <a>d. %s filea.txt</a>
+      <a>e. :save filea.txt</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor57('target57');" />
+    </div>
+    <p><b>問題 46 コマンドがフォアグラウンドで実行されている。Ctrl+Cキーの組み合わせを押すと、どの信号コードが送信されますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 9 (SIGKILL)</a>
+      <a>b. 15 (SIGTEPM)</a>
+      <a>c. 1 (SIGHUP)</a>
+      <a id="target58">d. 2 (SIGINT)</a>
+      <a>e. 3 (SIGQUIT)</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor58('target58');" />
+    </div>
+    <p><b>問題 47 プログラムmyappの出力を標準出力(stdout)とファイルfile1.log両方に送信するコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. foo | cp /tmp/foodata</a>
+      <a id="target59">b. foo | tee /tmp/foodata</a>
+      <a>c. foo > /t mp/foodata</a>
+      <a>d. foo | less /tmp/foodata</a>
+      <a>e. foo >stdout >>/ tmp/foodata</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor59('target59');" />
+    </div>
+    <p><b>問題 48 ユーザーfredが次のコマンドを実行すると、どの出力が表示されますか？<br>
+      <br>
+      echo 'fred $USER'<br>
+      <br>
+      1つ選択してください:</b></p>
+    <page>
+      <a>a. 'fred fred'</a>
+      <a id="target60">b. fred $USER</a>
+      <a>c. 'fred $USER'</a>
+      <a>d. fred /home/fred/</a>
+      <a>e. fred fred</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor60('target60');" />
+    </div>
+    <p><b>問題 49 コマンドfooが呼び出されたときに実行される実行可能ファイルへのパスを表示するコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. whatis foo</a>
+      <a>b. apropos foo</a>
+      <a>c. lsattr foo</a>
+      <a>d. locate foo</a>
+      <a id="target61">e. which foo</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor61('target61');" />
+    </div>
+    <p><b>問題 50 findコマンドの出力をxargsのコマンド、にパイプするとき、ファイル名にスペースがある場合はfindコマンドのどのオプションが役立ちますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. -printnul</a>
+      <a>b. -rep-space</a>
+      <a id="target62">c. -print0</a>
+      <a>d. -nospace</a>
+      <a>e. -ignore-space</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor62('target62');" />
+    </div>
+    <p><b>問題 51 システムが稼働し続けている期間を表示するコマンドを選択ください。(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target63">a. top</a>
+      <a>b. time --up</a>
+      <a id="target64">c. uptime</a>
+      <a>d. uname-u</a>
+      <a>e. up</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor63('target63');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor64('target64');" />
+    </div>
+    <p><b>問題 52 「files」が存在しない場合は、コマンド「ls>files」に関する正しい記述を選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. コマンドfilesが実行され、lsの出力を受け取る</a>
+      <a>b. lsの出力は端末に出力される</a>
+      <a>c. エラーメッセージが表示され、lsは実行されない</a>
+      <a id="target65">d. ファイルが作成され、lsの出力が含まれる</a>
+      <a>e. lsの出力は破棄される</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor65('target65');" />
+    </div>
+    <p><b>問題 53 シェルが閉じた後にもコマンドの履歴を保持するために、コマンドの履歴はユーザのホームディレクトリ内のファイルに書き込まれる。bashシェルの履歴情報を保持するファイルはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. .history bash</a>
+      <a>b. .history</a>
+      <a>c. .bashrc_history</a>
+      <a>d. .bash histfile</a>
+      <a id="target66">e. .bash_history</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor66('target66');" />
+    </div>
+    <p><b>問題 54 次のファイル名に一致するワイルドカードはどれですか？(2つ選択)
+      ttyS0 ttyS1 ttyS2
+      1つまたはそれ以上選択してください:
+    </b></p>
+    <page>
+      <a>a. tty＊2</a>
+      <a>b. tty[Ss][02]</a>
+      <a id="target67">c. tty?[0-5]</a>
+      <a>d. ttyS[1-5]</a>
+      <a id="target68">e. tty[A-Z][012]</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor67('target67');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor68('target68');" />
+    </div>
+    <p><b>問題 55 lsの出力を標準エラーにリダイレクトするコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. Is lerror</a>
+      <a id="target69">b. Is >&2</a>
+      <a>c. Is<<ERR</a>
+      <a>d. Is >-1</a>
+      <a>e. Is >>2</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor69('target69');" />
+    </div>
+    <p><b>問題 56 gzip圧縮のtarアーカイブの内容を表示するコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a id="target70">a. tar ztf archive.tgz</a>
+      <a>b. -tar fzt archive.tgz</a>
+      <a>c. gzip archive.tgz | tar xvf -</a>
+      <a>d. gzip -da rchive.tgz | tar tvf -</a>
+      <a>e. tar cf archive.tgz</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor70('target70');" />
+    </div>
+    <p><b>問題 57 /etc/passwdファイルからユーザー名のリスト(最初の列)とそのプライマリグループ(4番目の列)を出力するコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. split -c 1.4/etc/passwd</a>
+      <a>b. paste -f 1.4/etc/passwd</a>
+      <a>c. sort -t :-k 1.4 /etc/passwd</a>
+      <a>d. fmt -f 1.4 /etc/passwd</a>
+      <a id="target71">e. cut -d :-f 1.4 /etc/passwd</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor71('target71');" />
+    </div>
+    <p><b>問題 58 単一の大文字を表す正規表現を選択ください。1つ選択してください:</b></p>
+    <page>
+      <a id="target72">a. [A-Z]</a>
+      <a>b. :UPPER:</a>
+      <a>c. %C</a>
+      <a>d. !a-z</a>
+      <a>e. {AZ}</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor72('target72');" />
+    </div>
+    <p><b>問題 59 指定されたプロセスの優先度で別のコマンドを開始するには、どのコマンドを使用しますか？(パスなしでコマンドのみ)</b></p>
+    <clear>
+    <a id="target73">nice</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor73('target73');" />
+    </div>
+    <p><b>問題 60 DD/MM/YYYY:hh:mm:ssという形式のタイムスタンプを持つログファイルloga.logが与えられた場合、午前8時から午前8時59分までの期間のすべてのログエントリが取り出すコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. grep -E loga.log ':08:[0-9]+:[0-9]+'</a>
+      <a>b. grep -E ':08:[09]+:[09]+' loga.log</a>
+      <a>c. grep loga.log':08:[0-9]:[0-9]'</a>
+      <a>d. grep-E ':08:[00]+' loga.log</a>
+      <a id="target74">e. grep-E ':08:[0-9]+:[0-9]+' loga.log</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor74('target74');" />
+    </div>
+    <p><b>問題 61 マウント用に/etc/fstabで明示的なデバイスを提供する代わりに、目的のパーティションを識別するために使用できる他のオプションは何ですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target75">a. LABEL</a>
+      <a>b. FIND</a>
+      <a>c. ID</a>
+      <a id="target76">d. UUID</a>
+      <a>e. NAME </a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor75('target75');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor76('target76');" />
+    </div>
+    <p><b>問題 62 yumリポジトリーは、関連するパッケージグループを宣言できる。グループadmintoolsに属するすべてのパッケージをインストールするyumコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. yum pkgsel --install admintools</a>
+      <a>b. yum install admintools/＊</a>
+      <a>c. yum taskinstall admintools</a>
+      <a id="target77">d. yum groupinstall admintools</a>
+      <a>e. yum collection install admintools</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor77('target77');" />
+    </div>
+    <p><b>問題 63 追加のyumリポジトリーの設定ファイルが含まれるディレクトリーを記入ください。(ディレクトリへのフルパスを記入ください)</b></p>
+    <clear>
+      <a id="target78">/etc/yum.repos.d</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor78('target78');" />
+    </div>
+    <p><b>問題 64 GRUBブートファイルを現在アクティブなファイルシステムにインストールし、ブートローダーを最初のディスクの最初のパーティションにインストールするコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. grub-install /dev/sda0</a>
+      <a>b. grub-Install /dev/sda1</a>
+      <a>c. grub-install current /dev/sda1</a>
+      <a id="target79">d. grub-install /dev/sda</a>
+      <a>e. grub-install current /dev/sda0</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor79('target79');" />
+    </div>
+    <p><b>問題 65 どのファイルは/boot/ファイルシステムの配下にありますか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. fsck binaries</a>
+      <a id="target80">b. Linux kernel images</a>
+      <a>c. systemd target and service units</a>
+      <a id="target81">d. Initial ramdisk images</a>
+      <a>e. Bash shell binaries</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor80('target80');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor81('target81');" />
+    </div>
+    <p><b>問題 66 Debianパッケージマネージャーがソフトウェアパッケージをダウンロードするネットワークロケーションを定義するファイルはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target82">a. /etc/apt/sources.list</a>
+      <a>b. /etc/apt/apt.conf.d</a>
+      <a>c. /etc/apt/apt.conf</a>
+      <a>d. /etc/dpkg/dpkg.cfg</a>
+      <a>e. /etc/dpkg/dselect.cfg</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor82('target82');" />
+    </div>
+    <p><b>問題 67 dpkgパッケージ管理を使用してシステムからパッケージを削除する場合、どのdpkgオプションが設定ファイルも確実に削除されますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. --vacuum</a>
+      <a id="target83">b. --purge</a>
+      <a>c. --remove</a>
+      <a>d. --declare</a>
+      <a>e. --clean</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor83('target83');" />
+    </div>
+    <p><b>問題 68 Linuxコンテナと従来の仮想マシン(LXCとKVMなど)を比較する場合、正しい説明は次のうちどれですか？(3つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target84">a. 完全に仮想化されたマシンのゲスト環境は、仮想およびエミュレートされたハードウェアデバイスを提供するハイパーパイザーによって作成される</a>
+      <a id="target85">b. 完全に仮想化されたマシンは、仮想マシン内の特定のハードウェアアーキテクチャの任意オペレーティングシステムを実行できる</a>
+      <a>c. コンテナハイパーパイザーは別のカーネル実行を作成するため、閉じホスト上のコンテナは異なるオペレーテイングシステムを使用できる</a>
+      <a id="target86">d. コンテナは、カーネルがプロセスの分離とリソース管理を制御する軽量の仮想化手法である</a>
+      <a>e. コンテナはホストシステムの物理ハードウェアから完全に切り離されており、エミュレートされた仮想ハード、ウェアデバイスのみを使用できる</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor84('target84');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor85('target85');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor86('target86');" />
+    </div>
+    <p><b>問題 69 依存関係が満たされていないため、ローカルDebianパッケージのインストールに失敗しました。不足している依存関係をインストールし、中断されたパッケージのインストールを完了するコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. apt-get all</a>
+      <a>b. apt-get autoinstall</a>
+      <a id="target87">c. apt-get install -f</a>
+      <a>d. dpkg --fix --all</a>
+      <a>e. dpkg-reconfigure --all</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor87('target87');" />
+    </div>
+    <p><b>問題 70 RPMパッケージ管理を使用する場合、現在インストールされているすべてのパッケージをリストするコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. yum --list --installed</a>
+      <a id="target88">b. rpm --query --all</a>
+      <a>c. rpm --query --list</a>
+      <a>d. rpm --list --installed</a>
+      <a>e. yum --query --all</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor88('target88');" />
+    </div>
+    <p><b>問題 71 GRUB2設定ファイルで有効なコマンドはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. pxe-ifconfig</a>
+      <a>b. uefi</a>
+      <a id="target89">c. insmod</a>
+      <a id="target90">d. menuentry</a>
+      <a>e. kpartx</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor89('target89');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor90('target90');" />
+    </div>
+    <p><b>問題 72 lddコマンドの目的は何ですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target91">a. バイナリを実行する必要がある共有ライブラリをリストする</a>
+      <a>b. 別のライブラリ検索パスでバイナリを実行する</a>
+      <a>c. 動的にリンクされたバイナリを静的なバイナリに変換する</a>
+      <a>d. デフォルトで使用されるライブラリのバージョンを定義する</a>
+      <a>e. インストールされた共有ライブラリをインストールおよび更新する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor91('target91');" />
+    </div>
+    <p><b>問題 73 Logical Volume Manager(LVM)は何のために使用できますか？(3つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. 論理ボリュームを暗号化するため</a>
+      <a id="target92">b. 論理ボリュームを動的に作成または削除するため</a>
+      <a id="target93">c. スナップショットを作成するため</a>
+      <a>d. RAID 9アレイを作成するため</a>
+      <a id="target94">e. 論理ボリュームのサイズを動的に変更するため</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor92('target92');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor93('target93');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor94('target94');" />
+    </div>
+    <p><b>問題 74 パーティションの最大数とサイズに関するGPTとMBRパーティションテーブルの主な遣いは何ですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target95">a. MBRは最大2.2TBのパーティションサイズを処理できますが、GPTは最大9.4ZBのサイズをサポートします</a>
+      <a id="target96">b. デフォルトでは、GPTは最大128個のパーティションを管理できますが、MBRは4つのプライマリパーティションのみをサポートします</a>
+      <a>c. MBRは最大4TBのパーティションサイズを処理できますが、GPTは最大128ZBのパーティションサイズをサポートする</a>
+      <a>d. デフォルトでは、GPTは最大64個のパーティションを管理できますが、MBRは16個のプライマリパーティションのみをサポートします</a>
+      <a>e. GPTとMBRは両方とも、それぞれ最大4096TBの最大4つのプライマリパーティションをサポートする</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor95('target95');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor96('target96');" />
+    </div>
+    <p><b>問題 75 バックアップソフトウェアは、2回のバックアップ実行の間に変更されていないファイル間のハードリンクを頻繁に使用します。これらのハードリンクによりどのメリットが実現しますか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. ハードリンクファイルは作成後に変更できないため、バックアップは変更されないことが保証されている</a>
+      <a id="target97">b. 冗長コピーを保存するのではなく、ハードリンクがディスク上の同じデータを指すため、バックアップで、使用されるスペースが少なくなる</a>
+      <a>c. 古いパックアップは、テープなどの低速なバックアップメディアに移動できますが、新しいバックアップではハードリンクターゲットとして機能する</a>
+      <a id="target98">d. パックアップは、各ファイルのデータをコピーするのではなく、ハードリンクがファイルシステムのメタデータのみを変更するため、より高速に実行される</a>
+      <a>e. ハードリンクは非同期操作であり、コピー操作を後の時点に延期するため、パックアップはより高速に実行される</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor96('target97');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor97('target98');" />
+    </div>
+    <p><b>問題 76 /proc/ファイルシステムの配下に、現在マウントされているすべてのデバイスのリストが含まれているファイルを記入ください。(パスを含むファイルのフルネームを記入ください。)</b></p>
+    <clear>
+      <a id="target99">/proc/mounts</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor99('target99');" />
+    </div>
+    <p><b>問題 77 /etc/fstabの構文的に正しい行にはいくつのフィールドがありますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 7</a>
+      <a>b. 3</a>
+      <a id="target100">c. 6</a>
+      <a>d. 5</a>
+      <a>e. 4</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor100('target100');" />
+    </div>
+    <p><b>問題 78 通常のユーザーとしてchmod 640 filea.txtを実行しても、filea.txtの権限は更新されません。chmodが許可を変更できない理由は何ですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target101">a. filea.txtは、アクセス許可が変更できない固定値であるシンボリックリンクである</a>
+      <a id="target102">b. filea.txtは別のユーザーが所有しており、通常のユーザーは別のユーザーのファイルの権限を変更できない</a>
+      <a>c. filea.txtは、アクセス許可がターゲットから継承されるハードリンクであり、直接設定することはできない</a>
+      <a>d. filea.txtにはスティッキービットが設定されており、通常のユーザーはこの権限を削除できない</a>
+      <a>e. filea.txtにはSetUIDビットが設定されており、rootユーザーのみがファイルを変更できるという制限を課している</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor101('target101');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor102('target102');" />
+    </div>
+    <p><b>問題 79 必要に応じて生成する代わりに新しいファイルシステムを作成するときに、固定数のiノードを事前に割り当てるLinuxファイルシステムを選択ください。(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. JFS</a>
+      <a id="target103">b. ext2</a>
+      <a id="target104">c. ext3</a>
+      <a>d. XFS</a>
+      <a>e. procfs</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor103('target103');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor104('target104');" />
+    </div>
+    <p><b>問題 80 実行可能ファイル/bin/fooにSetUID許可を設定するコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. chmod 2755 /bin/foo</a>
+      <a>b. chmod 1755 /bin/foo</a>
+      <a id="target105">c. chmod 4755 /bin/foo</a>
+      <a>d. chmod u-s /bin/foo</a>
+      <a>e. chmod 755+s /bin/foo</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor105('target105');" />
+    </div>
+    <p><b>問題 81 特定のファイルのiノード番号を表示するコマンドを選択ください。(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. cp</a>
+      <a id="target106">b. stat</a>
+      <a>c. ln</a>
+      <a>d. inode</a>
+      <a id="target107">e. ls</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor106('target106');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor107('target107');" />
+    </div>
+    <p><b>問題 82 新しいファイルにデフォルトのパーミッションーrw-r-----になるためにumaskの設定はどれですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target108">a. 0027</a>
+      <a>b. 0038</a>
+      <a>c. 0640</a>
+      <a>d. 0017</a>
+      <a>e. 0227</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor108('target108');" />
+    </div>
+    <p><b>問題 83 停電後、/dev/sda3のXFSファイルシステムは矛盾している。既存のファイルシステムエラーはどのように修正しますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. ファイルシステムでxfsadmin repairを実行する</a>
+      <a>b. mount -fを使用して、ファイルシステムを強制的にマウントする</a>
+      <a>c. オプションxfs_repairを使用してファイルシステムをマウントする</a>
+      <a>d. ファイルシステムでxfsckを実行する</a>
+      <a id="target109">e. ファイルシステムでxfs_repairを実行する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor109('target109');" />
+    </div>
+    <p><b>問題 84 既存のファイルを指すハードリンクが作成されたときにそのファイルのどのプロパティが変更されますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. File size</a>
+      <a>b. Modify timestamp</a>
+      <a id="target110">c. Link count</a>
+      <a>d. Permissions</a>
+      <a>e. Inode number</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor110('target110');" />
+    </div>
+    <p><b>問題 85 Filesystem Hierarchy Standard(FHS)に従って、システムのすべてのユーザーが利用できるようにするために、システム管理者によってコンパイルされたバイナリをどこに配置する必要がありますか？(ディレクトリへのフルパスを記入ください。)</b></p>
+    <clear>
+      <a id="target111">/usr/local/bin/</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor111('target111');" />
+    </div>
+    <p><b>問題 86 シェルが特定のコマンドを処理する方法を示すコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. where</a>
+      <a id="target112">b. type</a>
+      <a>c. fileinfo</a>
+      <a>d. case</a>
+      <a>e. stat</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor112('target112');" />
+    </div>
+    <p><b>問題 87 viの通常モードでは、どの文字を使用してテキストの逆検索を開始しますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. r</a>
+      <a>b. s</a>
+      <a id="target113">c. ?</a>
+      <a>d. F</a>
+      <a>e. /</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor113('target113');" />
+    </div>
+    <p><b>問題 88 セクション1のマニュアルページコマンドを表示するコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. man command@1</a>
+      <a id="target114">b. man 1 command</a>
+      <a>c. man -s 1 command</a>
+      <a>d. man command(1)</a>
+      <a>e. man 1.command</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor114('target114');" />
+    </div>
+    <p><b>問題 89 ファイルdataがなければ、それを作成してlsの出力をファイルdataに書き込む、ファイルdataが既に存在する場合はlsの出力をファイルdataに上書きするコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. ls >> data</a>
+      <a>b. ls >& data</a>
+      <a>c. ls 3> data</a>
+      <a id="target115">d. ls > data</a>
+      <a>e. ls >>> data</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor115('target115');" />
+    </div>
+    <p><b>問題 90 実行中のBashシェル内のオプションと位置パラメーターを変更するために使用されるコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. envsetup</a>
+      <a>b. history</a>
+      <a>c. bashconf</a>
+      <a>d. setsh</a>
+      <a id="target116">e. set</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor116('target116');" />
+    </div>
+    <p><b>問題 91 rootが所有するすべてのプロセスの10を表示するコマンドはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. pgrep -c 0</a>
+      <a id="target117">b. pgrep -u root</a>
+      <a>c. pgrep -c root</a>
+      <a id="target118">d. pgrep -U 0</a>
+      <a>e. pgrep -f root</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor117('target117');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor118('target118');" />
+    </div>
+    <p><b>問題 92 viエディターにおいて、開いているドキュメントを保存してエディターを終了するシーケンスを選択ください。(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target119">a. Esc :wq</a>
+      <a>b. Esc zz</a>
+      <a>c. Ctrl :W</a>
+      <a id="target120">d. Esc ZZ</a>
+      <a>e. Ctrl XX</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor119('target119');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor120('target120');" />
+    </div>
+    <p><b>問題 93 grepコマンドの-vオプションの作用は何ですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. コマンドのバージョン情報を表示します</a>
+      <a>b. すべての行を出力し、一致する行の先頭にa+を付けます</a>
+      <a>c. 最後に一致した行を最初に表示する出力順序を変更します</a>
+      <a>d. 一致する部分を強調する色を有効にします</a>
+      <a id="target121">e. 一致しない行のみを出力します</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor120('target120');" />
+    </div>
+    <p><b>問題 94 完全なパスを指定せずにコマンドを起動すると、現在のシェルが実行する実行可能ファイルの完全なパスを表示できるツールはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. type</a>
+      <a>b. find</a>
+      <a id="target122">c. locate</a>
+      <a id="target123">d. which</a>
+      <a>e. pwd</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor122('target122');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor123('target123');" />
+    </div>
+    <p><b>問題 95 キーボードでキーの組み合わせCtrl+Zが押されたときに、どのシグナルがプロセスに送信されますか？1つ選択してください:</b></p>
+    <page>
+      <a id="target124">a. SIGSTOP</a>
+      <a>b. SIGTERM</a>
+      <a>c. SIGCONT</a>
+      <a>d. SIGINT</a>
+      <a>e. SIGKILL</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor124('target124');" />
+    </div>
+    <p><b>問題 96 正規表現s/[ABC][abc]/xx/が次の文字列に適用されるときの出力は何ですか？<br>
+      ABCabc<br>
+      1つ選択してください:
+    </b></p>
+    <page>
+      <a>a. xxxxxx</a>
+      <a>b. ABCabc</a>
+      <a>c. xxCxxc</a>
+      <a>d. Axxaxx</a>
+      <a id="target125">e. ABxxbc</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor125('target125');" />
+    </div>
+    <p><b>問題 97 Bashシェルを使用している場合、どのコマンドが現在の作業ディレクトリを出力しますか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. echo “${pwd}"</a>
+      <a id="target126">b. pwd</a>
+      <a id="target127">c. echo “${PWD}"</a>
+      <a>d. echo “${WD}"</a>
+      <a>e. printwd</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor126('target126');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor127('target127');" />
+    </div>
+    <p><b>問題 98 どのコマンドがtestをシェルに出力しますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. cat＜!EOT
+      　test
+      　EOT
+      </a>
+      <a>b. cat&＜EOT
+      　test
+      　EOT
+      </a>
+      <a id="target128">c. cat＜＜EOT
+      　test
+      　EOT
+      </a>
+      <a>d. cat!＜EOT
+      　test
+      　EOT
+      </a>
+      <a>e. cat＜|EOT
+      　test
+      　EOT
+      </a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor128('target128');" />
+    </div>
+    <p><b>問題 99 niceコマンドを使用してプロセスを開始するときのデフォルトのniceレベルは何ですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 0</a>
+      <a>b. -10</a>
+      <a>c. 20</a>
+      <a>d. 15</a>
+      <a id="target129">e. 10</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor129('target129');" />
+    </div>
+    <p><b>問題 100 ユーザーがホームディレクトリにサブディレクトリ￥dirを誤って作成した。そのディレクトリを削除するコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. rmdir "~/￥dir"</a>
+      <a>b. rmdir ~/￥dir</a>
+      <a>c. rmdir '~/￥dir'</a>
+      <a id="target130">d. rmdir ~/￥￥dir</a>
+      <a>e. rmdir ~/'dir'</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor130('target130');" />
+    </div>
+    <p><b>問題 101 正規表現を使用してファイルコンテンツの検索を実行できるコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. pgrep</a>
+      <a>b. find</a>
+      <a>c. locate</a>
+      <a>d. reggrep</a>
+      <a id="target131">e. grep</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor131('target131');" />
+    </div>
+    <p><b>問題 102 ネス卜されたディレクトリ構造で、特定の数のサブディレクトリを検索するようにコマンドを制限するために、どのコマンドラインオプションを使用しますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. -dirmax</a>
+      <a>b. -maxlevels</a>
+      <a id="targe132">c. -maxdepth</a>
+      <a>d. -s</a>
+      <a>e. -n</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor132('target132');" />
+    </div>
+    <p><b>問題 103 すべての一般的なファイルタイプに関する情報を含む定義データベースファイルを使用して、ファイルの形式を決定するコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. hash</a>
+      <a>b. pmagic</a>
+      <a>c. magic</a>
+      <a id="target133">d. file</a>
+      <a>e. type</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor133('target133');" />
+    </div>
+    <p><b>問題 104 ログインシェルとともに/etc/passwdからユーザー名のリストを生成するコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. sort -t: -k1.7 /etc/passwd</a>
+      <a>b. colrm 1.7 /etc/passwd</a>
+      <a>c. column -s: 1.7 /etc/passwd</a>
+      <a id="target134">d. cut -d:-f1.7 /etc/passwd</a>
+      <a>e. chop -c 1.7 /etc/passwd</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor134('target134');" />
+    </div>
+    <p><b>問題 105 gzip圧縮tarアーカイブtexts.tgzにファイルa.txtおよびb.txtが含まれている場合、gunzip texts.tgzの実行後に現在のディレクトリに存在するファイルはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. texts.tarおよびtexts.tgzのみ</a>
+      <a>b. a.txt、b.txt、およびtexts.tgzのみ</a>
+      <a>c. a.txtおよびb.txtのみ</a>
+      <a>d. a.txt.gz および b.txt.gzのみ</a>
+      <a id="target135">e. texts.tarの</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor135('target135');" />
+    </div>
+    <p><b>問題 106 viエディターで、カーソルの移動やバッファーへの行のコピーなどのコマンドを複数回発行したり、複数の行に適用したりするにはどうすればよいですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. :repeatコマンドの後に番号とコマンドを続けて使用する</a>
+      <a>b. 後続のすべてのコマンドを4回繰り返して、:set iteration=4などのコマンドを発行する</a>
+      <a id="target136">c. 4ddや2yyなどのコマンドの直前に番号を指定する</a>
+      <a>d. 14やyj2などのコマンドの後に数字を指定し、その後にEsc押す。</a>
+      <a>e. コマンドを適用する前に、shitキーとカーソルキーを使用して、影響を受けるすべての行を選択する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor136('target136');" />
+    </div>
+    <p><b>問題 107 &文字で終わるコマンドについて正しい説明はどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. コマンドは、initプロセスの直接の子として実行される</a>
+      <a id="target137">b. コマンドは、現在のシェルのバックグラウンドで実行される</a>
+      <a>c. コマンドの入力は/dev/nullから読み取られる</a>
+      <a>d. コマンドの出力は/dev/nullにリダイレクトされる</a>
+      <a>e. コマンドの出力はシェルによって実行される</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor137('target137');" />
+    </div>
+    <p><b>問題 108 ファイルを読み取り、ファイルのコンテンツから特定のサイズの個別のチャンクを作成するコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. parted</a>
+      <a>b. ar</a>
+      <a>c. cat</a>
+      <a>d. break</a>
+      <a id="target138">e. split</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor138('target138');" />
+    </div>
+    <p><b>問題 109 xargsコマンドの目的は何ですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. Xサーバーに引数を渡す</a>
+      <a>b. 通常、短いオプション(hなど)のみを受け入れるコマンドに長いオプション(--helpなど)を指定できる</a>
+      <a>c. 呼び出しごとに異なるパラメーターを使用して、コマンドの実行を繰り返す</a>
+      <a id="target139">d. 標準入力を読み取り、実行するコマンドを作成する</a>
+      <a>e. グラフィカルに質問を行い、シェルに回答を返す</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor139('target139');" />
+    </div>
+    <p><b>問題 110 現在のシェルで実行されているすべてのバックグラウンドタスクのリストを表示するコマンドはどれですか？ (パスまたはパラメーターなしでコマンドのみを記入ください)</b></p>
+    <clear>
+      <a id="target140">jobs</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor140('target140');" />
+    </div>
+    <p><b>問題 111 すでに実行中のプロセスの優先度を変更するためにどのコマンドを使用しますか？(パスまたはパラメーターなしでコマンドのみを記入ください)</b></p>
+    <clear>
+      <a id="target141">renice</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor141('target141');" />
+    </div>
+    <p><b>問題 112 Bashでは、コマンド後に1>&2を挿入するとリダイレクト、、、1つ選択してください:</b></p>
+    <page>
+      <a>a. ...標準入力から標準エラーへ</a>
+      <a>b. ...標準エラーへの標準出力</a>
+      <a>c. ...標準出力から標準入力へ</a>
+      <a>d. ...標準エラーから標準入力へ</a>
+      <a id="target142">e. ...標準出力から標準エラーへ</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor142('target142');" />
+    </div>
+    <p><b>問題 113 ハードディスクから起動すると、コンピューターはしLinuxカーネルとinitramfsを正常にロードしますが、その後の起動タスク中にハングする。Linux ベースのレスキューCDを使用してシステムを起動し、問題を調査する。問題の根本原因を特定するのに役立の方法はどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. システムがレスキューCDから正常に起動したため、ハードドライブから再起動する</a>
+      <a id="target143">b. 考えられるエラーについて、コンピューターのハードディスク上の/var/logファイルを調査する</a>
+      <a>c. コンピュータのハードディスク上の/proc/kmsgファイルを調べて、考えられるエラーを探す</a>
+      <a>d. レスキューCDのシェルからdmesgコマンドを使用して、元のシステムのブートログを表示する</a>
+      <a>e. chrootを使用してハードディスク上のファイルシステムに切り替え、dmesgを使用してログを表示する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor143('target143');" />
+    </div>
+    <p><b>問題 114 UEFIシステムのハードディスクのブートローダーはどこに保存されていますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. Master Boot Record(MBR)</a>
+      <a>b. EFI Boot Record(EBR)</a>
+      <a>c. パーティション番号127</a>
+      <a id="target144">d. EFI System Partition(ESP)</a>
+      <a>e. bootというラベルのパーティション</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor144('target144');" />
+    </div>
+    <p><b>問題 115 デフォルトのsystemdブートターゲットをマルチユーザーに設定する正しい方法を選択ください1つ選択してください:</b></p>
+    <page>
+      <a>a. systemctls et-boot multi-user.target</a>
+      <a>b. systemctl isolate multi-user.target</a>
+      <a>c. systemctl set-runlevel multi-user.target</a>
+      <a>d. systemctl boot -p multi-user.target</a>
+      <a id="target145">e. systemctl set-default multi-user.target</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor145('target145');" />
+    </div>
+    <p><b>問題 116 Linuxのブートプロセスに関係する初期RAMディスクについて正しい記述はどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target146">a. カーネルは、実際のルートファイルシステムにアクセスする前に、initramfsを一時的に使用する</a>
+      <a>b. initramfsは特定のカーネルバージョンに依存せず、初期インストール後に変更されません</a>
+      <a>c. 正常に起動すると、initramfsの内容が/run/initramfs/で利用可能になる</a>
+      <a id="target147">d. initramfsは圧縮されたファイルシステムアーカイブであり、解凍してその内容を調べることができる</a>
+      <a>e. initramfsファイルには、MBR、ブートローダ一、およびLinuxカーネルが含まれている</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor146('target146');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor147('target147');" />
+    </div>
+    <p><b>問題 117 必要な依存モジュールとともにカーネルモジュールをロードするコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. insmod</a>
+      <a id="target148">b. modprobe</a>
+      <a>c. module install</a>
+      <a>d. depmod</a>
+      <a>e. loadmod</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor148('target148');" />
+    </div>
+    <p><b>問題 118 lspciコマンドは、システムハードウェアについてどのような情報を表示できますか？(3つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target149">a. デバイスIRQ設定</a>
+      <a>b. イーサネットMACアドレス</a>
+      <a>c. システムバッテリータイプ</a>
+      <a id="target150">d. PCIパス速度</a>
+      <a id="target151">e. デバイスベンダーの識別</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor149('target149');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor150('target150');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor151('target151');" />
+    </div>
+    <p><b>問題 119 デフォルトの実行レベルを設定するために一般的に使用されるSystem V init構成ファイルはどれですか？(パスを含むファイルのフルネームを記入ください。)</b></p>
+    <clear>
+      <a id="target152">/etc/inittab</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor152('target152');" />
+    </div>
+    <p><b>問題 120 System V init構成に次の2つのシンボリックリンクがある<br>
+    <br>
+    /etc/rc1.d/K01 apache2<br>
+    <br>
+    /etc/rc2.d/S02 apache2<br>
+    <br>
+    これらのリンクによって参照されるスクリプトはいつ実行されますか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. システムのシャットダウン中にS02apache2とK01apache2の両方が実行される</a>
+      <a>b. ランレベル2が終了するとき、S02apache2が実行される</a>
+      <a id="target153">c. Kは非アクティブ化されたサービスを示すため、K01apache2は実行されません</a>
+      <a id="target154">d. S02apache2は、ランレベル2に入るとき実行される</a>
+      <a>e. K01apache2は、ランレベル1に入るとき実行される</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor153('target153');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor154('target154');" />
+    </div>
+  <br>
+  <footer>
+    <p><b>LPIC101 101-450 finished</b></p>
+  </footer>
+  </body>
+</html>
+
+<style>
+p {
+  margin-left: 23px;
+  margin-top: 15px;
+  margin-bottom: 1px;
+}
+</style>

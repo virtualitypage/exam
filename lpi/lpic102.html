@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>LPIC102</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/lpic1.css">
+  </head>
+  <body class="body">
+    <header>
+      <script src="./js/lpic.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <h3 class="heading"><a href="./lpic-1">LPIC102</a></h3>
+      <nav>
+        <ul>
+          <li><a href="./pdf/LPIC102 102-500.pdf" download="LPIC102 102-500.pdf" class="pdf-alert">PDF</a></li>
+          <li><a href="./zip/LPIC102 102-500.zip" download="LPIC102 102-500.zip" class="test-alert">問題集</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p><b>問題 1 ローカルシステムのホスト名を設定するには、どのコマンドを使用しますか？(パスまたはパラメーターなしでコマンドのみ)</b></p>
+    <clear>
+      <a id="target1">hostname</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor1('target1');" />
+    </div>
+    <p><b>問題 2 有効なIPv6アドレスを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. 2001.db8.819f..1</a>
+      <a id="target2">b. 2001:db8:3241::1</a>
+      <a>c. 2001:db8:0g21::1</a>
+      <a>d. 2001%db8%9990%%1</a>
+      <a>e. 2001::db8:4581::1</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor2('target2');" />
+    </div>
+    <p><b>問題 3 [　　　　　　　　]コマンドは、開いているTCP接続、ルーティングテーブルとインターフェイスの統計情報を表示するために使用されている(パスまたはパラメーターなしでコマンドのみ)<br>
+      [　　　　　　　　]内を記述ください
+    <br>
+    </b></p>
+    <clear>
+      <a id="target3">netstat</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor3('target3');" />
+    </div>
+    <p><b>問題 4 コマンドラインでNetworkManagerに簡単にアクセスできるNetworkManagerに含まれるcursesアプリケーションであるコマンドを入力ください(パスまたはパラメーターなしでコマンドのみ)</b></p>
+    <clear>
+      <a id="target4">nmtui</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor4('target4');" />
+    </div>
+    <p><b>問題 5 ネームサーバからのレスポンスだけではなく、クエリの詳細もレポートするDNSのデバッグツールを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. hostname</a>
+      <a id="target5">b. dig</a>
+      <a>c. dnslookup</a>
+      <a>d. zoneinfo</a>
+      <a>e. dnsq</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor5('target5');" />
+    </div>
+    <p><b>問題 6 /etc/nsswitch.confファイルにおいて、適切なエントリはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. include /etc/nsswitch.d/</a>
+      <a>b. namespaces: net mount procs</a>
+      <a id="target6">c. hosts: files dns</a>
+      <a>d. multi on</a>
+      <a>e. 192.168.168.4 dns-server</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor6('target6');" />
+    </div>
+    <p><b>問題 7 nmcli connection showに見られる次の接続タイプのうち、NetworkManagerに存在するものはどれですか？(3つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target7">a. ethernet</a>
+      <a id="target8">b. wifi</a>
+      <a>c. tcp</a>
+      <a>d. ipv6</a>
+      <a id="target9">e. bridge</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor7('target7');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor8('target8');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor9('target9');" />
+    </div>
+    <p><b>問題 8 Linux ワークステーションにてrouteコマンドはルーティングテーブルをプリントアウトまでに長い時間がかかりました。どのエラーを示しているのでしょうか？1つ選択してください:</b></p>
+    <page>
+      <a>a. ルーティングテーブル内の一つルータがないため、ルータ故障の自動検出メカニズム(ARF-D)はタイムアウトを待っている</a>
+      <a id="target10">b. DNS解決はデフォルトのルートに動作していない場合があり、ルータと宛先の名前解決の試行がタイムアウトになるかも知れない</a>
+      <a>c. 偶然に複数のデフォルトルーターがある場合、デフォルトルーターを決めるため選択しなければならない</a>
+      <a>d. Linux Kernel Routing Daemon(LKRD)は実行されていないため、initスクリプトまたはsystemdユニットを使用して起動する必要がある</a>
+      <a>e. ローカルルーティング情報が壊れている可能性があるため、ルーティングプロトコルを使用して再検証する必要がある</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor10('target10');" />
+    </div>
+    <p><b>問題 9 IPv6ヘッダーのHop Limitフィールドについて正しい記述を選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. マルチキャストパッケージの場合、フィールドの値は常に1である</a>
+      <a id="target11">b. パケットを転送する各ルーターは、フィールドの値を減らす</a>
+      <a>c. パケットを転送する各ルーターは、フィールドの値を増やす</a>
+      <a>d. フィールドは、ホップバイホップ拡張ヘッダー内で送信される</a>
+      <a>e. パッケージの輸送中、フィールドは変更されない</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor11('target11');" />
+    </div>
+    <p><b>問題 10 nmcliサブコマンドはどれですか？(ニつ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. nmcli wifi</a>
+      <a id="target12">b. nmcli device</a>
+      <a>c. nmcli address</a>
+      <a id="target13">d. nmcli connection</a>
+      <a>e. nmcli ethernet</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor12('target12');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor13('target13');" />
+    </div>
+    <p><b>問題 11 コマンドipを使用した結果として、どの変更が発生する可能性がありますか？(3つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target14">a. IPアドレスは変更される場合がある</a>
+      <a>b. システムのホスト名は変更される場合がある</a>
+      <a id="target15">c. ルーティングテーブルが変更される場合がある</a>
+      <a id="target16">d. ネットワークインターフェイスはアクティブまたは非アクティブになる場合がある</a>
+      <a>e. 新しいネームサーバーをリゾルパ設定に追加できる</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor14('target14');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor15('target15');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor16('target16');" />
+    </div>
+    <p><b>問題 12 IPv4サブネット192.168.2.128/26内の一意のホストに使用できるIPアドレスはいくつですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 126</a>
+      <a id="target17">b. 62</a>
+      <a>c. 30</a>
+      <a>d. 6</a>
+      <a>e. 14</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor17('target17');" />
+    </div>
+    <p><b>問題 13 IANAによって予約されたプライベートアドレスとプライベートルーティングに割り当るクラスB IPv4ネットワークはどれですか？(3つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target18">a. 192.168.0.0/16</a>
+      <a>b. 169.255.0.0/16</a>
+      <a id="target19">c. 10.0.0.0/8</a>
+      <a>d. 127.0.0.0/8</a>
+      <a id="target20">e. 172.16.0.0/12</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor18('target18');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor19('target19');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor20('target20');" />
+    </div>
+    <p><b>問題 14 システムの既存のディストリビューション固有の設定ファイルに基づいてネットワークインターフェイスを設定するコマンドはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target21">a. ifdown</a>
+      <a>b. ifpause</a>
+      <a id="target22">c. ifup</a>
+      <a>d. ifstart</a>
+      <a>e. ifconf</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor21('target21');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor22('target22');" />
+    </div>
+    <p><b>問題 15 通常のユーザーのUIDがグループのGIDと同一である場合、正しい記述はどれですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target23">a. UIDとGIDは互いに独立しているため、ユーザーとグループは引き続き使用可能である</a>
+      <a>b. グループ構成に他のメンパーが含まれている場合でも、ユーザーはグループの唯一のメンバーである</a>
+      <a>c. UIDはGIDよりも優先されるため、ユーザーは利用できますが、グループは利用できません</a>
+      <a>d. GIDはUIDよりも優先されるため、グループは利用可能ですが、ユーザーは利用できません</a>
+      <a>e. ユーザーとグループは、IDの競合によるあいまいさを避けるために利用できません</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor23('target23');" />
+    </div>
+    <p><b>問題 16 各ユーザーの/etc/shadowに保存されている情報はどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. ユーザーのプライベートSSHキー</a>
+      <a>b. 数値のユーザーID(UID)</a>
+      <a id="target24">c. ユーザーのハッシュ化されたパスワード</a>
+      <a>d. ユーザーのホームディレクトリへのパス</a>
+      <a>e. ユーザーの最後のログインのタイムスタンプ</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor24('target24');" />
+    </div>
+    <p><b>問題 17 すべてのアクティブなsystemdタイマーを表示するコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. timectl list</a>
+      <a>b. timeq</a>
+      <a>c. systemctl-timer show</a>
+      <a>d. systemctl -t</a>
+      <a id="target25">e. systemctl list-timers</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor25('target25');" />
+    </div>
+    <p><b>問題 18 dateコマンドで実行できるタスクはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. システムの日付を設定しますが、時刻は設定しません</a>
+      <a id="target26">b. システムの日付と時刻を設定する</a>
+      <a>c. 1か月または1年のカレンダーを印刷する</a>
+      <a id="target27">d. 特定の形式で時間を表示する</a>
+      <a>e. 2つの日付間の期間を計算する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor26('target26');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor27('target27');" />
+    </div>
+    <p><b>問題 19 cronスケジューリングシステムの使用を許可されているすべてのユーザーを含めるファイルが存在する場合、パスを含むファイルのフルネームを記入してください。</b></p>
+    <clear>
+      <a id="target28">/etc/cron.allow</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor28('target28');" />
+    </div>
+    <p><b>問題 20 useraddで何を指定できますか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target29">a. ユーザーのホームディレクトリへの絶対パス</a>
+      <a id="target30">b. ユ一ザ一の数値ユ一ザ一ID(UID)</a>
+      <a>c. 新しいユーザーが使用できるプリンター</a>
+      <a>d. 新しいア力ウントへのログインに使用されるSSHキ一</a>
+      <a>e. ユーザーがsudoを使用して実行できるコマンド</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor29('target29');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor30('target30');" />
+    </div>
+    <p><b>問題 21 ファイル/etc/localtimeについて正しい記述を選択ください。1つ選択してください:</b></p>
+    <page>
+      <a id="target31">a. /usr/share/zoneinfo/Europe/Berlinなどへのシンボリックリンクまたはタイムゾーン情報ファイルのコピーである</a>
+      <a>b. このファイルを変更したら、変更を有効にするためにnewtzconfigを実行する必要がある</a>
+      <a>c. /sys/device/clock/ltimeへのシンボリックリンクである。常に現在の現在地時間が含まれている</a>
+      <a>d. Europe/Berlinなどの文字列を含むブレーンテキストファイルである</a>
+      <a>e. システムのIPアドレスの地理的位置に基づいて、NTPサービスによって作成または維持されている</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor31('target31');" />
+    </div>
+    <p><b>問題 22 systemdタイマーユニットに関して正しい記述はどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. タイマーによって実行されるコマンドは、タイマーユニットの[Cmd]セクションで指定される</a>
+      <a>b. 専用のシステムサービスsystemd-cronは、タイマーユニットの実行を処理する</a>
+      <a id="target32">c. 各systemdタイマーユニットは、特定のsystemdサービスユニットを制御する</a>
+      <a>d. タイマーユニットは、サービスユニットのファイル内でのみ定義できる</a>
+      <a>e. タイマーユニットはシステム範囲にのみ存在し、ユーザーは使用できない</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor32('target32');" />
+    </div>
+    <p><b>問題 23 グローバル/etc/crontabファイルとユーザ特定のcrontabファイル両方に使えるフィールドを選択ください(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. Username</a>
+      <a>b. Year</a>
+      <a id="target33">c. Command</a>
+      <a id="target34">d. Minute</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor33('target33');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor34('target34');" />
+    </div>
+    <p><b>問題 24 国際化プログラムのメッセージを日本語(ja_JP.UTF-8)に変更するためにログインシェルを起動するときに実行するコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target35">a. export LC_MESSAGES="ja_JP.UTF-8"</a>
+      <a>b. export MESSAGE="ja_JP.UTF-8"</a>
+      <a>c. export LANGUAGE="ja_JP.UTF-8"</a>
+      <a>d. export ALL_MESSAGES="ja_JP.UTF-8"</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor35('target35');" />
+    </div>
+    <p><b>問題 25 プライマリ・グループにユーザを割り当てるファイルを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. /etc/group</a>
+      <a>b. /etc/pgroup</a>
+      <a>c. /etc/shadow</a>
+      <a id="target36">d. /etc/passwd</a>
+      <a>e. /etc/gshadow</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor36('target36');" />
+    </div>
+    <p><b>問題 26 どの操作はユーザが対話的なログインセッションの取得ができないようになりますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. ユーザのホームディレクトリにnologinファイルを作成する</a>
+      <a>b. ユーザのUIDを0に設定する</a>
+      <a id="target37">c. コマンドchsh -sユーザ名/bin/falseを実行する</a>
+      <a>d. staffグループからユーザを削除する</a>
+      <a>e. /etc/noaccessにユーザを追加する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor37('target37');" />
+    </div>
+    <p><b>問題 27 systemdに含まれるどのコマンドは、時間やユニット名などの基準で systemd journal からメッセージを選択することをサポートしていますか？(パスまたはパラメーターなしでコマンドのみ)</b></p>
+    <clear>
+      <a id="target38">journalctl</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor38('target38');" />
+    </div>
+    <p><b>問題 28 sytemd-journaldに関する正しい記述はどれですか？(3つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. syslogと互換性がなく、通常のsyslogを使用してシステムにインストールすることはできません</a>
+      <a id="target39">b. 各メッセージの_UIDまたは_PIDなどのメタデータを保持する</a>
+      <a id="target40">c. さらに処理するために、ログメッセージをsyslogに渡すことができる</a>
+      <a id="target41">d. kern、user、authなどのsyslog機能をサポートする</a>
+      <a>e. systemdのメッセージのみを処理し、他のツールのメッセージは処理しません</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor39('target39');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor40('target40');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor41('target41');" />
+    </div>
+    <p><b>問題 29 新しい電子メールエイリアスを設定に追加した後、この変更を有効にするために実行する必要があるコマンドを記入してください。(必須なパラメーターを含めパスなしでコマンドを指定ください。)</b></p>
+    <clear>
+      <a id="target42">newaliases</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor42('target42');" />
+    </div>
+    <p><b>問題 30 Chrony設定ファイルのどのオプションが、最初の同期を高速化するために、NTPサーバーへのポーリングの初期間隔を変更しますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. fast</a>
+      <a>b. quickstart</a>
+      <a>c. flood</a>
+      <a>d. fsync</a>
+      <a id="target43">e. iburst</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor43('target43');" />
+    </div>
+    <p><b>問題 31 システムログのローテーション、圧縮と送信コマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. rotatelog</a>
+      <a>b. logger</a>
+      <a id="target44">c. logrotate</a>
+      <a>d. syslogd --rotate</a>
+      <a>e. striplog</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor44('target44');" />
+    </div>
+    <p><b>問題 32 なぜシステムのタイムゾーンの正しい設定が重要なのでしょうか？1つ選択してください:</b></p>
+    <page>
+      <a>a. タイムゾーンは、ファイルの更新時刻の一部として保存され、ファイルが作成された後に変更することはできない</a>
+      <a>b. NTPは設定されたタイムゾーンに基づいて近くサーバを選択する</a>
+      <a>c. タイムゾーンはチェックサムの計算に含まれ、タイムゾーンの変更は既存のチェックサムを無効にするため</a>
+      <a id="target45">d. Unixのタイムスタンプをローカル時刻に変換するのはタイムゾーンの設定に依存する</a>
+      <a>e. 環境変数LANGやLC_MESSAGESは、デフォルトでは、タイムゾーンに基づいて設定されている</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor45('target45');" />
+    </div>
+    <p><b>問題 33 [　　　　　　　　]コマンドは、すべてのsendmail互換MTAで配信待ちのキューに格納されているメールのリストを表示する。(パスまたはパラメーターなしでコマンドのみ)<br>
+      [　　　　　　　　]にあてはまる言葉を記入してください
+      <br>
+    </b></p>
+    <clear>
+      <a id="target46">mailq</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor46('target46');" />
+    </div>
+    <p><b>問題 34 CUPSの設定ファイルを含む最上位ディレクトリを記入してください(ディレクトリへのフルパスを指定する)</b></p>
+    <clear>
+      <a id="target47">/etc/cups/cups-files.conf</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor47('target47');" />
+    </div>
+    <p><b>問題 35 プリンタキュー内すべてのジョブをリス卜するコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target48">a. lpq</a>
+      <a>b. lpd</a>
+      <a>c. lp</a>
+      <a>d. lpr</a>
+      <a>e. lsq</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor48('target48');" />
+    </div>
+    <p><b>問題 36 すべてのメール関連イベントをファイル/var/log/maillogに書き込み、すべての重要なイベントをリモートサーバlogger.example.comに送信するには/etc/syslog.confのどのエントリですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. mail.* /var/log/maillog mail,crit @logger.example.org</a>
+      <a>b. mail.* /var/log/maillog mail.crit syslog://logger.example.org</a>
+      <a>c. mail* /var/log/maillog mail crit @logger.example.org</a>
+      <a>d. mail /var/log/maillog mail.crit @logger.example.org</a>
+      <a id="target49">e. mail.* /var/log/maillog mail.crit @logger.example.org</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor49('target49');" />
+    </div>
+    <p><b>問題 37 /etc/ntp.confファイルのどのオプションが、時間情報を照会する外部NTPソースを指定していますか？(値またはパラメーターなしでオプションのみ)</b></p>
+    <clear>
+      <a id="target50">server</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor50('target50');" />
+    </div>
+    <p><b>問題 38 オープンリレーという用語に関連するプロトコルはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. POP3</a>
+      <a>b. LDAP</a>
+      <a id="target51">c. SMTP</a>
+      <a>d. NTP</a>
+      <a>e. IMAP</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor51('target51');" />
+    </div>
+    <p><b>問題 39 すべての環境変数と関数を表示するコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. lsenv</a>
+      <a>b. ls</a>
+      <a>c. getargs</a>
+      <a>d. lsshell</a>
+      <a id="target52">e. set</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor52('target52');" />
+    </div>
+    <p><b>問題 40 ファイルシステム内の要素で動作するテスト用の次の比較演算子はどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target53">a. -lt</a>
+      <a>b. -z</a>
+      <a id="target54">c. -eq</a>
+      <a>d. -d</a>
+      <a>e. -f</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor53('target53');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor54('target54');" />
+    </div>
+      <p><b>問題 41 echo $$コマンドによってどのような情報が提供されますか？1つ選択してください:</b></p>
+      <page>
+      <a>a. echoコマンドのプロセスID</a>
+      <a id="target55">b. 現在のシェルのプロセスID</a>
+      <a>c. 次のコマンドのプロセスID</a>
+      <a>d. バックグラウンドに配置された最後のコマンドのプロセスID</a>
+      <a>e. 最後に実行されたコマンドのプロセスID</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor55('target55');" />
+    </div>
+      <p><b>問題 42 シェル変数VARIABLEがサブシェルにも引き継がれるコマンドはどれですか?1つ選択してください:</b></p>
+      <page>
+      <a>a. set VARIABLE</a>
+      <a>b. set $VARIABLE</a>
+      <a>c. env VARIABLE</a>
+      <a>d. export $VARIABLE</a>
+      <a id="target56">e. export VARIABLE</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor56('target56');" />
+    </div>
+    <p><b>問題 43 下記複数コマンドの実行結果はどれですか？<br>
+      <br>
+      echo '1 2 3 4 5 6 '| while read a b c: do<br>
+      echo result: $c $b $a:<br>
+      done<br>
+      <br>
+      1つ選択してください:
+    </b></p>
+    <page>
+      <a id="target57">a. result: 3 4 5 6 2 1</a>
+      <a>b. result: 3 2 1</a>
+      <a>c. result: 6 5 4</a>
+      <a>d. result: 1 2 3 4 5 6</a>
+      <a>e. result: 6 5 4 3 2 1</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor57('target57');" />
+    </div>
+    <p><b>問題 44 すべてのユーザーのシェル変数をグローバルに設定するには、どの設定ファイルを変更する必要がありますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. /etc/shellenv</a>
+      <a>b. /etc/.bashrc</a>
+      <a>c. ~/.bash_profile</a>
+      <a id="target58">d. /etc/profile</a>
+      <a>e. /etc/bashrc</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor58('target58');" />
+    </div>
+    <p><b>問題 45 コマンドseq10はどのような出力を生成しますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. コマンドが停止するまで、10ずつ増加する連続した数値ストリーム</a>
+      <a>b. 数値10を標準出力に</a>
+      <a>c. 1から9までの数字で、1行に1つの数字</a>
+      <a id="target59">d. 1から10までの数字で、1行に1つの数字</a>
+      <a>e. 2番目のパラメーターが欠落しているため、出力は作成されない</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor59('target59');" />
+    </div>
+    <p><b>問題 46 現在のBashシェルで定義されているエイリアスを一覧表示するコマンドは何ですか？(パスまたはパラメーターなしでコマンドのみ)</b></p>
+    <clear>
+      <a id="target60">alias</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor60('target60');" />
+    </div>
+    <p><b>問題 47 ユーザーが使用できるメモリ量を制限するに使用できるコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. chage</a>
+      <a>b. passwd</a>
+      <a id="target62">c. ulimit</a>
+      <a>d. umask</a>
+      <a>e. usermod</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor62('target62');" />
+    </div>
+    <p><b>問題 48 SSHホストキーの目的は何ですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. キーのホストからリモートマシンにログインするユーザーを認証する</a>
+      <a>b. これは、すべてのユーザーSSHキーに署名する必要があるルートキーである</a>
+      <a>c. クライアントのホストを識別するために、ユーザーキーに加えて、SSHクライアントから送信する必要がある</a>
+      <a id="target63">d. サーバーのID情報を接続しているSSHクライアントに提供する</a>
+      <a>e. cron、syslog、またはバックアップジョブなどのシステムサービスがリモートホストに自動的に接続するために使用する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor63('target63');" />
+    </div>
+    <p><b>問題 49 TCPラッパーの目的は何ですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target64">a. ネットワークサービスへのアクセスを制限する</a>
+      <a>b. ネットワークサービスをTCPポートにバインドする</a>
+      <a>c. TCPサービスが使用する帯域幅を管理および調整する</a>
+      <a>d. SSLサポートをプレーンテキストTCPサービスに追加する</a>
+      <a>e. IP パケットにTCPメッセージをカプセル化する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor64('target64');" />
+    </div>
+    <p><b>問題 50 次はsudo設定の抜粋である。<br>
+      <br>
+      jane ANY=NOPASSWD: /bin/kill. /bin/id. PASSWD:/sbin/fdisk<br>
+      <br>
+      正しい記述はどれですか？(3つ選択)1つまたはそれ以上選択してください:
+    </b></p>
+    <page>
+      <a>a. janeは、ルートのパスワードを指定した後に/sbin/fdiskを実行できる</a>
+      <a id="target65">b. janeは、パスワードを指定した後に/sbin/fdiskを実行できる</a>
+      <a id="target66">c. janeは、パスワードを指定せずに/bin/idを実行できる</a>
+      <a id="target67">d. janeはパスワードを指定せずに/bin/killを実行できる</a>
+      <a>e. janeは、パスワードを指定した後にのみ/bin/idを実行できる</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor65('target65');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor66('target66');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor67('target67');" />
+    </div>
+      <p><b>問題 51 SSHクライアントのデフォルトオプションが含まれる設定ファイルはどれですか？1つ選択してください:</b></p>
+      <page>
+      <a>a. /etc/ssh/client</a>
+      <a>b. /etc/ssh/ssh_client</a>
+      <a>c. /etc/ssh/ssh</a>
+      <a>d. /etc/ssh/sshd_config</a>
+      <a id="target68">e. /etc/ssh/ssh_config</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor68('target68');" />
+    </div>
+      <p><b>問題 52 システムの構成に応じて、このホストで実行されているネットワークサービスを有効または無効にするために使用できるファイルはどれですか。1つ選択してください:</b></p>
+      <page>
+      <a>a. /etc/ports</a>
+      <a>b. /etc/services</a>
+      <a>c. /etc/host.conf</a>
+      <a>d. /etc/profile</a>
+      <a id="target69">e. /etc/xinetd.conf</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor69('target69');" />
+    </div>
+      <p><b>問題 53 TCPポートを開いたプロセスのPIDを識別できるコマンドは次のうちどれですか？1つ選択してください:</b></p>
+      <page>
+      <a>a. strace</a>
+      <a>b. ptrace</a>
+      <a id="target70">c. lsof</a>
+      <a>d. nessus</a>
+      <a>e. debug</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor70('target70');" />
+    </div>
+    <p><b>問題 54 SSHでX11転送を使用する場合、アプリケーションが正しいX11サーバーに接続できるように、リモートシェルで自動的に設定される環境変数は何ですか？(追加のコマンドや値なしで環境変数のみ)</b></p>
+    <clear>
+      <a id="target71">DISPLAY</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor71('target71');" />
+    </div>
+    <p><b>問題 55 どのファイルがあると、root以外のすべてのユーザーが一時的にシステムにログインできなくなりますか？(パスを含むファイルのフルネームを指定する。)</b></p>
+    <clear>
+      <a id="target72">/etc/nologin</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor72('target72');" />
+    </div>
+    <p><b>問題 56 SSHを使用してマシンをオーダーするためにログインする際の自動認証に使用される既存のSSHキーをブリロードして管理するコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. ssh-keyring</a>
+      <a>b. ssh-keygen</a>
+      <a>c. ssh-pki</a>
+      <a>d. sshd</a>
+      <a id="target73">e. ssh-agent</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor73('target73');" />
+    </div>
+    <p><b>問題 57 複数のXサーバーを実行しているマシンで、プログラムはX11サーバーの異なるインスタンスをどのように識別しますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. x11:bobのようなXサーバーを実行するユーザーの名前</a>
+      <a>b. /dev/X11/xservers/1のようなデバイス名</a>
+      <a>c. fe80 ::/64サブネットからの一意のIPv6アドレス</a>
+      <a id="target74">d. :1のような表示名</a>
+      <a>e. X11設定ファイルで定義されているUUIDを固定する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor74('target74');" />
+    </div>
+    <p><b>問題 58 スクリーンリーダーの目的は何ですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 接続されたモニターのパラメーターを読み取り、適切なX11の構成を作成する</a>
+      <a id="target75">b. 盲人や視覚障害者ために画面に表示されるテキストを読み込む</a>
+      <a>c. ラインやマーカーを表示し、人々が速読のテクニックに役立つ。</a>
+      <a>d. 電子書籍が含まれているファイルを表示と管理する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor75('target75');" />
+    </div>
+    <p><b>問題 59 X11設定ファイルxorg.confはセクションにグループ分け}されている。セクションSectionNameの内容はどういうふうにそのセクションに関連付けられていますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. タグ＜Section name=“SectionName"＞とタグ＜Section＞の聞に配置されている</a>
+      <a>b. 最初のインデントなしセクション"Section Name”の後に配置され、一つだけのタブ文字でインデントされなければなりません</a>
+      <a id="target76">c. セクション"SectionName"ラインとEndSectionラインの間に配置されている</a>
+      <a>d. 行[SectionName]の後に配置されている</a>
+      <a>e. セクションSectionName{…}のように中括弧内に置かれている</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor76('target76');" />
+    </div>
+    <p><b>問題 60 SPICEが提供する機能はどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. Xorgの替わりにローカルX11サーバーとして機能する</a>
+      <a id="target77">b. リモートホスト上のグラフィカルアプリケーションへのアクセス</a>
+      <a>c. バイナリプログラムをリモートマシンにアップロードして実行する</a>
+      <a id="target78">d. ローカルUSBデバイスをリモートアプリケーションに接続する</a>
+      <a>e. リモートマシンからアプリケーションをダウンロードしてローカルにインストールする</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor77('target77');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor78('target78');" />
+    </div>
+    <p><b>問題 61 systemd journalログデータの保存先はどこですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. /var/jlog/and /var/jlogd/</a>
+      <a>b. /var/log/syslog.bin or /var/log/syslogjrn</a>
+      <a id="target79">c. /run/log/journal/or /var/log/journal/</a>
+      <a>d. /etc/systemd/journal/ or /usr/lib/systemd/journal/</a>
+      <a>e. /proc/log/ and/proc/klog/</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor79('target79');" />
+    </div>
+    <p><b>問題 62 コマンドsendmailに関して正しい記述を選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. MTAでは、cronデーモンによってsendmailコマンドを定期的に実行する必要がある</a>
+      <a>b. sendmailコマンドは、メールが正常に送信されたMTAのキュー履歴を出力する</a>
+      <a>c. sendmail MTAがインストールされている場合にのみ利用可能である</a>
+      <a id="target80">d. PostfixやEximを含むすべての一般的なMTAは、sendmailコマンドを提供する</a>
+      <a>e. systemdを使用する場合、sendmailはrelayctlのエイリアスである</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor80('target80');" />
+    </div>
+    <p><b>問題 63 CUPS構成ディレクトリ内のどのファイルにプリンターの設定が含まれていますか？1つ選択してください:</b></p>
+    <page>
+      <a id="target81">a. printers.conf</a>
+      <a>b. printcap.conf</a>
+      <a>c. cupsd.conf</a>
+      <a>d. snmp.conf</a>
+      <a>e. cups-devices.conf</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor81('target81');" />
+    </div>
+    <p><b>問題 64 newaliasesによって処理されるファイルを記入ください。(パスを含むファイルのフルネームを指定してください)</b></p>
+    <clear>
+      <a id="target82">/etc/mail/aliases</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor82('target82');" />
+    </div>
+    <p><b>問題 65 syslogファシリティはどれですか？（2つ選択）1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. postmaster</a>
+      <a>b. remote </a>
+      <a id="target83">c. mail</a>
+      <a id="target84">d. local5</a>
+      <a>e. accounting</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor83('target83');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor84('target84');" />
+    </div>
+    <p><b>問題 66 jourmalctlに使用される出力の時間枠を制限するパラメータを選択ください。(ニつ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. --date=</a>
+      <a id="target85">b. --until=</a>
+      <a id="target86">c. --since=</a>
+      <a>d. --upto=</a>
+      <a>e. --from=</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor85('target85');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor86('target86');" />
+    </div>
+    <p><b>問題 67 ～/.forwardファイルに関する正しい記述を選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. デフォルトでは、グループmailqのユーザーの～/.forwardファイルのみが処理され、他のすべてのユーザーの～/.forwardファイルは無視される</a>
+      <a>b. ～/.forwardを使用すると、rootは任意の電子メールアドレスを設定できますが、他のすべてのユーザーは自分のアドレスのみを設定できる</a>
+      <a>c. ～/.forwardはMTAが所有し、ユーザーが書き込みできないため、editaliasesコマンドを使用して編集する必要がある</a>
+      <a id="target87">d. 正しく構成されている場合、~/.forwardを使用して、各受信メールを1人以上の他の受信者に転送できる</a>
+      <a>e. ～/.forwardを編集した後、ユーザーはnewaliasesを実行してメールサーバーに変更を認識させる必要がある</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor87('target87');" />
+    </div>
+    <p><b>問題 68 印刷キュー内のジョブのリストを表示するコマンドはどれですか？1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target88">a. lpq</a>
+      <a>b. cups --list</a>
+      <a>c. lprm -l</a>
+      <a id="target89">d. lpstat</a>
+      <a>e. lpr -q</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor88('target88');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor89('target89');" />
+    </div>
+    <p><b>問題 69 systemd-journaldを使用するシステムで、システムログにメッセージHowdyを追加するコマンドはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target90">a. systemd-cat echo Howdy</a>
+      <a id="target91">b. logger Howdy</a>
+      <a>c. append Howdy</a>
+      <a>d. journalctl add Howdy</a>
+      <a>e. echo Howdy >/dev/journal</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor90('target90');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor91('target91');" />
+    </div>
+    <p><b>問題 70 Chrony設定ファイルにリモートタイムソースを定義するオプションはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target92">a. server</a>
+      <a>b. clock</a>
+      <a>c. source</a>
+      <a id="target93">d. pool</a>
+      <a>e. remote</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor92('target92');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor93('target93');" />
+    </div>
+    <p><b>問題 71 ハードウェアクロックをシステムクロックに同期するためにどのコマンドが使用されますか？(パスまたはパラメーターなしでコマンドのみを指定してください)</b></p>
+    <clear>
+      <a id="target94">hwclock</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor94('target94');" />
+    </div>
+      <p><b>問題 72 NTPクライアントによって監視および修正される状況はどれですか？1つ選択してください:</b></p>
+      <page>
+      <a id="target95">a. システムクロックと基準クロック間の時間のずれ</a>
+      <a>b. 現在のコンピューターの場所のタイムゾーンの変更</a>
+      <a>c. システムクロックとコンピューターのハードウェアクロック間の時間のずれ</a>
+      <a>d. 夏時間をサポートするには調整が必要場合</a>
+      <a>e. 物理的な場所とタイムゾーンの設定</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor95('target95');" />
+    </div>
+    <p><b>問題 73 エイリアスlsが存在する場合、エイリアスの現在のターゲットではなくコマンドls-lを指すようにエイリアスを更新するコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. alias --force ls='ls -l'</a>
+      <a>b. realias ls='ls -l' </a>
+      <a>c. alias --update ls ls='ls -l'</a>
+      <a id="target96">d. alias ls=' ls -l'</a>
+      <a>e. set ls='ls -l'</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor96('target96');" />
+    </div>
+    <p><b>問題 74 コマンドdateの出力をシェル変数mydateに入れるコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. mydate="date"</a>
+      <a id="target97">b. mydate="$(date)"</a>
+      <a>c. mydate="$((date))"</a>
+      <a>d. mydate="exec date"</a>
+      <a>e. mydate="${date}"</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor97('target97');" />
+    </div>
+    <p><b>問題 75 コマンドecho$?で表示される情報は何ですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 次のコマンドに使用されるプロセスID</a>
+      <a>b. echoコマンドの終了値</a>
+      <a id="target98">c. echo直前に実行されたコマンドの終了値</a>
+      <a>d. 現在のシェルのプロセスID</a>
+      <a>e. echoコマンドのプロセスID</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor98('target98');" />
+    </div>
+    <p><b>問題 76 Bashログインシェルによって直接読み取られないものはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. ~/.bash_profile</a>
+      <a>b. ~/.profile</a>
+      <a id="target99">c. ~/.bashrc</a>
+      <a>d. /etc/profile</a>
+      <a>e. ~/.bash_login</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor99('target99');" />
+    </div>
+    <p><b>問題 77 ユーザーのホームディレクトリにある.profileファイルに関する正しい記述を選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. 所有者のみが読み取り可能である必要がある</a>
+      <a>b. それは#!から始めなければなりません</a>
+      <a>c. ログインシェルのバイナリを呼び出す必要がある</a>
+      <a id="target100">d. 有効なシェルスクリプト構文を使用する必要がある</a>
+      <a>e. 実行可能でなければなりません</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor100('target100');" />
+    </div>
+    <p><b>問題 78 スクリプトの最初の行にあり#!で始まるステートメントに関する正しい記述を選択ください。(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target101">a. スクリプトの実行に使用されるインタープリターのパスと引数を指定する</a>
+      <a>b. スクリプトの文字エンコードを定義する</a>
+      <a>c. スクリプトのインタープリターのインストールをトリガーする</a>
+      <a>d. !が削除されるまで、スクリプトが実行されないようにする</a>
+      <a id="target102">e. スクリプトインタープリターに無視されるコメントである</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor101('target101');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor102('target102');" />
+    </div>
+    <p><b>問題 79 コマンドseq1 5 20の出力を選択ください。1つ選択してください:</b></p>
+    <page>
+      <a id="target103">a. 1 6 11 16</a>
+      <a>b. 1 2 3 4 </a>
+      <a>c. 5 10 15 20</a>
+      <a>d. 1 5 10 15</a>
+      <a>e. 2 3 4 5 </a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor101('target103');" />
+    </div>
+    <p><b>問題 80 Bash内のすべての定義変数と関数をリストするコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. export</a>
+      <a>b. echo $ENV</a>
+      <a id="target104">c. set</a>
+      <a>d. env -a</a>
+      <a>e. env</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor104('target104');" />
+    </div>
+    <p><b>問題 81 ユーザーアカウントに関連するどのような情報がchageコマンドで変更されますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. ユーザーが使用できるコマンドのセット</a>
+      <a>b. グループメンバーシップ</a>
+      <a id="target105">c. パスワード有効期限情報</a>
+      <a>d. 新しいファイルのデフォルトの許可</a>
+      <a>e. 新しいファイルのデフォルトの所有権</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor105('target105');" />
+    </div>
+    <p><b>問題 82 プログラムがクラッシュしたときにユーザー用に作成されるコアファイルのサイズに制限を設定するコマンドを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a id="target106">a. ulimit</a>
+      <a>b. core</a>
+      <a>c. ktrace</a>
+      <a>d. edquota</a>
+      <a>e. quota</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor106('target106');" />
+    </div>
+    <p><b>問題 83 シャドウパスワードは、標準のシャドウなしパスワードと比較して、パスワードセキュリティをどのように改善しますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. すべてのシャドウパスワードは45日間有効であり、後で変更する必要があります</a>
+      <a>b. システムのホストキーは、すべてのシャドウパスワードの暗号化に使用されます</a>
+      <a id="target107">c. 通常のユーザーは、シャドウパスワードのパスワードハッシュにアクセスできません</a>
+      <a>d. シャドウパスワードはブレーンテキストで保存され、脆弱なパスワードをチェックできます</a>
+      <a>e. シャドウパスワードは常に、ユーザーの秘密キーと一致する必要がある公開キーと組み合わされます</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor107('target107');" />
+    </div>
+    <p><b>問題 84 TCPラッパー設定を編集して特定のホストにサービスへのアクセスを許可した後、これらの変更はいつ有効になりますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. 新しい構成は、次回のシステムの再起動時に有効になる</a>
+      <a id="target108">b. 新しい構成は、すべての新しい接続に対してすぐに有効になる</a>
+      <a>c. 新しい構成は、それぞれのサービスを再起動すると有効になる</a>
+      <a>d. サービスへの最後に確立された接続が閉じられると、新しい構成が有効になる</a>
+      <a>e. tcpdサービスを再起動すると、新しい構成が有効になる</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor108('target108');" />
+    </div>
+    <p><b>問題 85 公開および秘密のSSHキーに関する正しい記述を選択ください。(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. 各ユーザーアカウントには、そのアカウントへのログインに使用できるキーペアが1つだけある</a>
+      <a id="target109">b. 秘密鍵は誰にも公開されてはなりません</a>
+      <a>c. 同じ秘密鍵に対して、いくつかの異なる公開鍵が生成される場合がある</a>
+      <a>d. リモートログインを許可するには、ユーザーの秘密キーをリモートサーバーにコピーする必要がある</a>
+      <a id="target110">e. 秘密キーの機密性を維持するには、所有者がSSHキーペアを作成する必要がある</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor109('target109');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor110('target110');" />
+    </div>
+    <p><b>問題 86 SetUIDビットが設定されているルートが所有するすべてのファイルを見つけるコマンドはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. find /ーowner 0 -permbits 0x100000000</a>
+      <a id="target111">b. find / -user root -perm -4000</a>
+      <a>c. find / -user 0 -mode +s</a>
+      <a>d. find / --filter uid=1 --filter pers=u+s</a>
+      <a>e. find /ーowner root -setuid</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor111('target111');" />
+    </div>
+    <p><b>問題 87 実行中のssh-agentインスタンスにOpenSSH秘密鍵を追加するコマンドを記入ください(パスなしでコマンド名のみ指定してください。)</b></p>
+    <clear>
+      <a id="target112">ssh-add</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor112('target112');" />
+    </div>
+    <p><b>問題 88 xinetdサービスの設定ファイルを保持するディレクトリを記入ください。(ディレクトリへのフルパスを指定してください。)</b></p>
+    <clear>
+      <a id="target113">/etc/xinetd.d/</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor113('target113');" />
+    </div>
+    <p><b>問題 89 SSHエージェントと対話するためにsshはどのメカニズムを使用しますか？1つ選択してください:</b></p>
+    <page>
+      <a id="target114">a. SSH_AUTH_SOCKなどの環境変数を評価する</a>
+      <a>b. システム全体のSSHエージェントが使用するポート2222へ接続する</a>
+      <a>c. 固定ソケット.ssh-agent/ipcを使用する</a>
+      <a>d. sshをssh-agentの呼び出しに置き換えるエイリアスを作成する</a>
+      <a>e. 各ssh呼び出しの子プロセスとしてssh-agentを開始する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor114('target114');" />
+    </div>
+    <p><b>問題 90 sshコマンドのどのパラメーターが、ログイン試行に使用される秘密鍵の場所を指定しますか？(値またはパラメーターを指定せずにオプション名のみを指定ください。)</b></p>
+    <clear>
+      <a id="target115">-i</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor115('target115');" />
+    </div>
+    <p><b>問題 91 IPv6について正しいものはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. IPv4アドレスは、IPv6に変更せずに使用できる</a>
+      <a id="target116">b. IPv6はブロードキャストアドレスをサポートしなくなりました</a>
+      <a>c. IPv6の場合、UDPおよびTCPはRapid Transmission Protocol RTPに置き換えられました</a>
+      <a>d. IPv6では、ほとんどのサービスのTCPポート番号が変更されている</a>
+      <a>e. IPv6はマルチキャストアドレスをサポートしなくなりました</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor116('target116');" />
+    </div>
+    <p><b>問題 92 次のコマンドに関する正しい記述を選択ください<br>
+      <br>
+      nmcli device wifi connect WIFIoI<br>
+      <br>
+      1つ選択してください:
+    </b></p>
+    <page>
+      <a>a. Network Managerは新しいwifi接続WIFIoIを作成し、アクティブにする</a>
+      <a>b. WIFIoIは無効なWIfiデバイスであるため、Network Managerはエラーを返す</a>
+      <a>c. Network Managerは、WIFIoIという名前の未設定の新しい仮想ネットワークインターフェイスを作成する</a>
+      <a>d. Network Managerは、SSID WIFIoIを使用して新しいパブリックホットスポットを聞く</a>
+      <a id="target117">e. 接続WIFIoIが存在しない場合、Network Managerはエラーを返す</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor117('target117');" />
+    </div>
+    <p><b>問題 93 次の出力を生成したコマンドはどれですか？<br>
+      ;;　global options:　+cmd<br>
+      ;;　Got answer:<br>
+      ;;　-＞＞HEADER＜＜-　opcode:　QUERY,　status:　NOERROR,　id: 40997<br>
+      ;;　flags　qr　rd　ra;　QUERY:　1,　ANSWER:　0,　AUTHORITY:　1,　ADDITIONAL:<br>
+      <br>
+      ;;　OPT　PSEUDOSECTION:<br>
+      ;　 ENDS:　version:　0,　flags:;　udp:1280<br>
+      ;;　QUESTION　SECTION:<br>
+      ;　 www.example.org.　IN　US<br>
+      <br>
+      ;;　AUTHORITY SECTION:<br>
+      example.org.　　　　　3600　IN　　SOA　sns.dns.incann.org　noc.dns.icann.o<br>
+      2016110776　7200　3600　1209600　3600<br>
+      ;;　Query　time:　144　msec<br>
+      ;;　SERVER:　127.0.1　1#53(127.0.1.1)<br>
+      ;;　WHEN:　Sat　Apr　01　21:22:46　BST　2017<br>
+      ;;　MSG　SIZE　rcvd:　114<br>
+      <br>
+      1つ選択してください:
+    </b></p>
+    <page>
+      <a>a. dig -t mx www.example.org</a>
+      <a>b. dig -t soa www.example.org</a>
+      <a id="target118">c. dig -t ns www.example.org</a>
+      <a>d. dig www.example.org</a>
+      <a>e. dig -t a www.example.org</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor118('target118');" />
+    </div>
+    <p><b>問題 94 以前に非アクティブなネットワークインターフェースeth0をアクティブにするためにコマンドに欠落しているパラメーターを記入ください。(コマンド、パス、または追加オプションなしでパラメーターのみ指定ください。)
+      ip link set __ dev eth0
+    </b></p>
+    <clear>
+      <a id="target119">up</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor119('target119');" />
+    </div>
+    <p><b>問題 95 Network Managerは、システムのネットワーク接続に関してどの状態を表示できますか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. up</a>
+      <a id="target120">b. portal</a>
+      <a id="target121">c. full</a>
+      <a>d. login-required</a>
+      <a>e. firewalled</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor120('target120');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor121('target121');" />
+    </div>
+      <p><b>問題 96 サブネット203.0.113.64/28の有効なホストアドレスはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+      <page>
+      <a>a. 203.0.113.80</a>
+      <a id="target122">b. 203.0.113.65</a>
+      <a>c. 203.0.113.64</a>
+      <a id="target123">d. 203.0.113.78</a>
+      <a>e. 203.0.113.81</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor122('target122');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor123('target123');" />
+    </div>
+    <p><b>問題 97 ファイル/etc/resolv/confで使用できるキーワードはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target124">a. search</a>
+      <a>b. substitute</a>
+      <a id="target125">c. nameserver</a>
+      <a>d. method</a>
+      <a>e. lookup</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor124('target124');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor125('target125');" />
+    </div>
+    <p><b>問題 98 pingコマンドはデフォルトでどのように機能しますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. ブロードキャストパケットをネット上のすべてのホストに送信し、ターゲットシステムからの応答を受信するのを待つ</a>
+      <a>b. リモートホストのポート0にUDPパケットを送信し、UDPエラー応答を受信するまで待機する</a>
+      <a>c. リモートホストにARP要求を送信し、ARP応答の受信を待機する</a>
+      <a id="target126">d. ICMPエコー要求をリモートホストに送信し、ICMPエコー応答を受信するのを待つ</a>
+      <a>e. TCP SYNパケットをリモートホストに送信し、TCP ACK応答の受信を待機する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor126('target126');" />
+    </div>
+    <p><b>問題 99 eth0ネットワークインターフェイスを介して送受信されたバイト数を表示するコマンドはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target127">a. ifconfig eth0</a>
+      <a>b. netstat -s -i eth0</a>
+      <a>c. ip stats show dev eth0</a>
+      <a id="target128">d. ip -s link show eth0</a>
+      <a>e. route -v via eth0</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor127('target127');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor128('target128');" />
+    </div>
+    <p><b>問題 100 次のルーティングテーブルをご参照ください
+      宛先192.168.2.150への発信パケットはどのように処理されますか？1つ選択してください:
+    </b></p>
+    <page>
+      <a>a. デバイスwlan0で直接送信される</a>
+      <a id="target129">b. eth0上のルーター192.168.1.1に渡される</a>
+      <a>c. eth0のデフォルトルーター255.255.255.0に渡される</a>
+      <a>d. wlan0のデフォルトルータ192.168.178.1に渡される</a>
+      <a>e. デバイスeth0で直接送信される</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor129('target129');" />
+    </div>
+    <p><b>問題 101 システムのIPルーティンゲテーブルからデフォルトゲートウェイを削除するコマンドを選択ください。(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. sysctl ipv4.default_gw=0</a>
+      <a>b. ifconfig unset default</a>
+      <a id="target130">c. ip route del default</a>
+      <a>d. netstat -r default</a>
+      <a id="target131">e. route del default</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor130('target130');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor131('target131');" />
+    </div>
+    <p><b>問題 102 /etc/network/interfacesや/etc/sysconfig/network-scripts/ifcfg-eth0などのディストリビューション固有の設定に従ってネットワークインターフェイスを有効にするコマンドは何ですか？(パスまたはパラメーターなしでコマンドのみを指定ください。)</b></p>
+    <clear>
+      <a id="target132">ifup</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor132('target132');" />
+    </div>
+    <p><b>問題 103 Linuxシステム上のNetwork Managerがディストリビューションのメカニズムを使用してネットワークインターフェースの設定に関する正しいものを選択ください。(2つ選択してください。)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a id="target133">a. NetworkManagerはデフォルトで、すでに設定されているインターフェースを変更しません</a>
+      <a id="target134">b. NetworkManagerは、NetworkManagerによって特別に管理されていない限り、DHCPを使用するようにすべてのネットワークインターフェイスを再設定する</a>
+      <a>c. NetworkManagerは、ディストリビューションのネットワークインターフェイス設定を使用するように設定できる</a>
+      <a>d. NetworkManagerは、管理する各インターフェイスに対して明示的に有効にする必要がある</a>
+      <a>e. NetworkManagerは、NetworkManagerによって設定されなかったすべてのインターフェースを無効にする</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor133('target133');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor134('target134');" />
+    </div>
+    <p><b>問題 104 HTTPSサービスで使用される標準TCPポートはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target135">a. 443</a>
+      <a>b. 636</a>
+      <a>c. 25</a>
+      <a>d. 8080</a>
+      <a>e. 80</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor135('target135');" />
+    </div>
+    <p><b>問題 105 locale.confで定義できる環境変数はどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. LC_GEOGRAPHY</a>
+      <a id="target136">b. LC_ALL</a>
+      <a>c. LC_UTF8</a>
+      <a id="target137">d. LC_TIME</a>
+      <a>e. LC_USERNAME</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor136('target136');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor137('target137');" />
+    </div>
+    <p><b>問題 106 システムのタイムゾーンを日本(東京)時間に設定するのはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. tzconf /etc/localtime</a>
+      <a>b. localegen -t -f /usr/share/zoneinfo/Japan>/etc/locate.tz</a>
+      <a id="target138">c. In -sf/usr/share/zoneinfo/Japan/etc/localtime</a>
+      <a>d. sysctl -w clock.tz='Japan'</a>
+      <a>e. modprobe tz_janap</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor138('target138');" />
+    </div>
+    <p><b>問題 107 useraddのどのオプションが新しいユーザーのホームディレクトリを作成し、いくつの標準ファイルをプロビジョニングしますか？(値またはパラメーターを指定せずにオプション名のみを指定ください。)</b></p>
+    <clear>
+      <a id="target139">-m</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor139('target139');" />
+    </div>
+    <p><b>問題 108 特定のユーザーがatを使用してタスクをスケジュールできないようにするにはどうすればよいですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. /etc/a td.confファイルの[deny]セクションに特定のユーザーを追加する</a>
+      <a>b. atd --deny [user]コマンド‘を実行する</a>
+      <a id="target140">c. 特定のユーザーを/etc/at.denyファイルに追加する</a>
+      <a>d. 特定のユーザーを/etc/at.allowファイルに追加する</a>
+      <a>e. 特定のユーザーをnojobsグループに追加する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor140('target140');" />
+    </div>
+    <p><b>問題 109 ユーザーのパスワードの最終変更の情報を含むファイルはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. /etc/passwd</a>
+      <a>b. /var/log/shadow</a>
+      <a>c. /etc/gshadow</a>
+      <a id="target141">d. /etc/shadow</a>
+      <a>e. /etc/pwdlog</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor141('target141');" />
+    </div>
+    <p><b>問題 110 /etc/groupファイルにどのフィールドがありますか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. グループの説明</a>
+      <a>b. デフォルトのグループACL</a>
+      <a id="target142">c. グループの名前</a>
+      <a>d. グループのホームディレクトリ</a>
+      <a id="target143">e. グループに属するユーザーのリスト</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor142('target142');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor143('target143');" />
+    </div>
+    <p><b>問題 111 systemdタイマーユニットに存在するセクションを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. [Events]</a>
+      <a>b. [Schedule]</a>
+      <a id="target144">c. [Timer]</a>
+      <a>d. [Trigger]</a>
+      <a>e. [cron]</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor144('target144');" />
+    </div>
+    <p><b>問題 112 Getentコマンドで、既存のすべてのユーザーをリストしているものはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target145">a. getent passwd</a>
+      <a>b. getent uids</a>
+      <a>c. getent homes</a>
+      <a>d. getent logins</a>
+      <a>e. getent users</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor145('target145');" />
+    </div>
+    <p><b>問題 113 次のユーザーのcrontabエントリである<br>
+      <br>
+      15 14* * 1-5/usr /local/bin/example.sh<br>
+      <br>
+      スクリブト/usr/local/bin/example.shはいつ実行されますか？1つ選択してください:
+    </b></p>
+    <page>
+      <a id="target146">a. At 14:15 local time，Monday to Friday</a>
+      <a>b. At 14:15 local time.January till May.</a>
+      <a>c. At 14:15 local time.1st to 5th day of month.</a>
+      <a>d. At 14:15 local time.February till June.</a>
+      <a>e. At 15:14 local time.1st to 5th day of month.</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor146('target146');" />
+    </div>
+    <p><b>問題 114 /etc/にcron.allowとcron.denyのどちらも存在しない場合、次の正しいのもを選択ください。1つ選択してください:</b></p>
+    <page>
+      <a>a. 追加の設定がなければ、すべてのユーザーがユーザー固有のcrontabを作成できる</a>
+      <a>b. cronデーモンは起動を拒否し、システムのログファイルに欠けているファイルを報告する</a>
+      <a>c. ユーザーがユーザー固有のcrontabを作成するとき、システム管理者はそれを明示的に承認する必要がある</a>
+      <a>d. /etc/crond.confのデフォルト設定は、ユーザー固有のcrontabが一般的に許可されるかどうかを定義する</a>
+      <a id="target147">e. 追加の設定がなければ、rootのみがユーザー固有のcrontabを作成できる</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor147('target147');" />
+    </div>
+    <p><b>問題 115 iconvコマンドの目的は何ですか？1つ選択してください:</b></p>
+    <page>
+      <a id="target148">a. ファイルをある文字セットから別の文字セットに変換する</a>
+      <a>b. ルートディレクトリツリーがFilesystem Hierarchy Standard(FHS)のすべての規則に従ってコンパイルされていることを確認する</a>
+      <a>c. ext4ファイルシステムのiノードのモードを変更する</a>
+      <a>d. .icoで終わるアイコンファイルから追加のメタ情報を表示する</a>
+      <a>e. PNGからJPEGに変換などようにピットマップ画像をある形式から別の形式に変換する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor148('target148');" />
+    </div>
+    <p><b>問題 116 /etc/passwdのパスワードフィールドのどの文字が、暗号化されたパスワードが/etc/shadowに保存されていることを示すために使用されますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. *</a>
+      <a>b. #</a>
+      <a>c. s</a>
+      <a id="target149">d. x</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor149('target149');" />
+    </div>
+    <p><b>問題 117 点字ディスプレイという用語は何を指しますか？1つ選択してください:</b></p>
+    <page>
+      <a>a. XMLと同様にデータ交換用の標準ファイル形式</a>
+      <a>b. KDEおよびGNOMEに類似したLinuxデスクトップ環境</a>
+      <a id="target150">c. 小さなドットを使用したキャラクターの物理的表現</a>
+      <a>d. LCDに取って代わられたレガシーディスプレイテクノロジー</a>
+      <a>e. デスクトップアプリケーション用の標準化された高約定のグラフィカルテーマ</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor150('target150');" />
+    </div>
+    <p><b>問題 118 接続するXサーバーを決定するために、X11クライアントが使用する環境変数はどれですか？(変数名のみを指定ください)</b></p>
+    <clear>
+      <a id="target151">DISPLAY</a>
+    </clear>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor151('target151');" />
+    </div>
+    <p><b>問題 119 XDMやKMDなどのディスプレイマネージャーで処理されるタスクはどれですか？(2つ選択)1つまたはそれ以上選択してください:</b></p>
+    <page>
+      <a>a. 現在のグラフィックデバイスとモニター用のX11設定ファイルを作成する</a>
+      <a id="target152">b. ユーザーのログインを処理する</a>
+      <a>c. ユーザーが設定可能な時間にわたって非アクティブだった場合、画面をロックする</a>
+      <a>d. 新しいモニターやプロジェクターなどの追加デバイスを接続するときに設定する</a>
+      <a id="target153">e. ユーザーのデスクトップ環境を起動して準備する</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor152('target152');" />
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor153('target153');" />
+    </div>
+    <p><b>問題 120 仮想マシンのビデオカード出力にアクセスするために設計されているプロトコルはどれですか？1つ選択してください:</b></p>
+    <page>
+      <a>a. KDE</a>
+      <a>b. XDMCP</a>
+      <a>c. X11</a>
+      <a id="target154">d. SPICE</a>
+      <a>e. Xfce</a>
+    </page>
+    <div class="button">
+      <input type="button" class="btn btn-info btn-sm" value=" 正解を表示 " onclick="changeColor154('target154');" />
+    </div>
+    <br>
+    <footer>
+      <p><b>LPIC102 102-450 finished</b></p>
+    </footer>
+  </body>
+</html>
+
+<style>
+p{
+  margin-left: 23px;
+  margin-top: 15px;
+  margin-bottom: 1px;
+}
+</style>
